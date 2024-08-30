@@ -121,6 +121,8 @@ Windows
 
   - посмотреть список процессов на порту 8080:
 netstat -a -n -o | find "8080"
+  или так:
+netstat -na | Select-String "8080"
   - уничтожить процессы на порту 8080:
 npx kill-port 8080
 
