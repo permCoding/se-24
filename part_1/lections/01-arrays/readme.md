@@ -1,5 +1,21 @@
 # ЛЕКЦИЯ 1. Массивы
 
+## 0. JS Node.js
+
+```js
+const express = require('express'); // npm i express
+
+const app = express();
+
+app.get('/', (req, res) => {
+    let seconds = new Date().getTime() / 1000;
+    res.set('Content-Type', 'text/html');
+    res.end(`<H2>seconds = ${seconds}</H2>`)
+});
+
+app.listen(3000); // http://localhost:3000/
+```
+
 [Ecmascript-language: **Types**](https://tc39.es/ecma262/#sec-ecmascript-language-types)  
 [MDN web docs: **Arrays**](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)  
 
