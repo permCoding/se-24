@@ -1,4 +1,4 @@
-// методы массивав в js - https://learn.javascript.ru/array-methods
+// методы массивов в js - https://learn.javascript.ru/array-methods
 
 const ex01 = () => {
     a = [1, [2, 3], 4]
