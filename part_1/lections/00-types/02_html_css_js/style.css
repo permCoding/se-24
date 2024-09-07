@@ -1,0 +1,14 @@
+input {
+	width: 12em;
+	font-family: 'Comic Sans MS';
+	font-size: 25pt;
+	font-weight: bold;
+	text-align: center;
+}
+input.txt {
+	height: 2em;
+}
+input.btn {
+	height: 4em;
+	color: #0000AA;"	
+}

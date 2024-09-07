@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="windows-1251">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="solver.js"></script>
+</head>
+
+<body bgcolor=#228866>
+  <center> <br> <br>
+	<input
+		type="text"
+		class="txt"
+		style="color: #00AA00;"
+		id=numBin 
+		value=1101 /> <br>
+	<input 
+		type="text"
+		class="txt"
+		style="color: #AA0000;"
+		id=numDec 
+		value=0 /> <br> <br>
+	<input 
+		type="button" 	
+		class="btn"
+		value="Convert BinToDec" 
+		onclick="numDec.value = binToDec(numBin.value)" />
+  </center>
+</body>
+
+</html>
+
+<!--
+	<input // объект ввода-вывода
+		type="text" // тип объекта
+		class="txt" // тут описан стиль		
+		style="color: #00AA00;" // зелёный - уточнение стиля
+		id=numBin // идентификатор объекта
+		value=1101 /> // что там написано по умолчанию
+-->
