@@ -1,4 +1,20 @@
-# ЛЕКЦИЯ 1. Массивы
+# ЛЕКЦИЯ 2. Массивы
+
+1 Инициализация массива  
+
+2 Функциональные методы  
+- map, filter, reduce, every, some, forEach, sort  
+- fill()  
+
+3 Array Methods  
+- at(2), at(-2), toString(2)  
+- includes, indexOf, lastIndexOf, find(func==true), findIndex(func==true)
+- join, slice (с отриц индекс), splice, push, pop, shift, unshift, reverse  
+
+4 итераторы: keys(), values(), entries(), iterator.next().value  
+
+---  
+---  
 
 ## 0. JS Node.js
 
