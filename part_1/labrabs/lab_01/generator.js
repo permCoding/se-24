@@ -4,7 +4,7 @@ const getObject = () => {
     return { "w": w, "p": p }
 }
 
-let arr = new Array(100).fill(0).map(_ => getObject() );
+let arr = new Array(20).fill(0).map(_ => getObject() );
 
 require('fs').writeFileSync('./items.json', JSON.stringify(arr, null, 4));
 
