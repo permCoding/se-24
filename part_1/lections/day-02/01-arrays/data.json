@@ -1,0 +1,26 @@
+[
+    {
+        "name": {
+            "first": "Андрей",
+            "last": "Беляков"
+        },
+        "age": 22,
+        "gender": "male"
+    },
+    {
+        "name": {
+            "first": "Олег",
+            "last": "Яшин"
+        },
+        "age": 21,
+        "gender": "male"
+    },
+    {
+        "name": {
+            "first": "Юля",
+            "last": "Колпакова"
+        },
+        "age": 24,
+        "gender": "female"
+    }
+]

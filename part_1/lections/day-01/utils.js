@@ -16,7 +16,7 @@ const binToDec_2 = (bin) => {
     return dec;
 }
 
-let str = 'kjwefhwb'
+let str = 'JavaScript'
 
 module.exports = {
     binToDec_2,
