@@ -21,4 +21,12 @@ console.log(arr);
 
 console.log(JSON.stringify(arr, null, 4));
 
-// console.log(JSON.stringify(arr, ['name', 'age'], 4));
+console.log(JSON.stringify(arr, null, '____'));
+
+console.log(JSON.stringify(arr, ['name', 'age'], 4));
+
+console.log(JSON.stringify(arr, ['id', 'age'], 4));
+
+// console.log(
+//     JSON.stringify(arr, (key, value) => (typeof value != 'number')? undefined: value, 4)
+// );
