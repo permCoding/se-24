@@ -7,7 +7,9 @@ const getRndInd = () => Math.floor( stats.length * Math.random() );
 
 const createResponse = (req, res) => {
     res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
-    res.end( stats[getRndInd()] );
+    let stat = stats[getRndInd()];
+    console.log(stat);
+    res.end(stat);
 }
 
 const infoLog = () => console.log(`http://${host}:${port}`)

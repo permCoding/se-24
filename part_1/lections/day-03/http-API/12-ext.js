@@ -10,7 +10,7 @@ const infoLog = console.log(`http://${host}:${port}`);
 const getRndInd = () => Math.floor( stats.length * Math.random() );
 
 const createResponse = (req, res) => {
-    console.log(req.url);
+    console.log(req.url, FAVICON);
     if (path.extname(req.url) === '.ico') {
         res.setHeader('Content-Type', 'image/x-icon');
         fs.createReadStream(FAVICON).pipe(res);
