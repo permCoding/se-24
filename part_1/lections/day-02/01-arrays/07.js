@@ -1,3 +1,5 @@
+const log = console.log;
+
 let obj_1 = {
     'id': 1024,
     'name': {
@@ -17,16 +19,31 @@ let obj_2 = {
 }
 
 let arr = [obj_1, obj_2];
-console.log(arr);
+// log(arr);
+// log(JSON.stringify(arr, null, 4));
+// log(JSON.stringify(arr, null, '____'));
+// log(JSON.stringify(arr, ['name', 'age'], 4));
+// log(JSON.stringify(arr, ['id', 'age'], 4));
 
-console.log(JSON.stringify(arr, null, 4));
+log( ['name', 'age'].includes('name') ); // true
+log( ['name', 'age'].includes('id') ); // true
 
-console.log(JSON.stringify(arr, null, '____'));
+const notFields = ['id', 'first'];
+let jsonStr = JSON.stringify(obj_1, (key, value) => (!notFields.includes(key))? value: undefined);
+log(jsonStr);
 
-console.log(JSON.stringify(arr, ['name', 'age'], 4));
+const filtred = (obj, notFields) => {
+    let jsonStr = JSON.stringify(
+        obj, 
+        (key, value) => (!notFields.includes(key))? value: undefined
+    );
+    return JSON.parse(jsonStr);
+}
 
-console.log(JSON.stringify(arr, ['id', 'age'], 4));
-
-// console.log(
-//     JSON.stringify(arr, (key, value) => (typeof value != 'number')? undefined: value, 4)
-// );
+log(
+    JSON.stringify(
+        arr.map(x => filtred(x, ['id', 'first'])).sort((a,b) => a.age-b.age), 
+        null,
+        4
+    )
+);

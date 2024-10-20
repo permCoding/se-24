@@ -11,7 +11,7 @@ const ex01 = () => {
     console.log(a)
     console.log(a.flat())
     console.log(a.flat(1))
-    console.log(a.flat(2))
+    console.log(a.flat(2)) // depth == 2
 
     a = [1, 2, 4]
     console.log(a)
@@ -59,4 +59,4 @@ const ex04 = () => {
 }
 
 console.clear()
-ex04()
+ex01()
