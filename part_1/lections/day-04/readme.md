@@ -1,5 +1,11 @@
 # Lection
 
+```txt
+API:
+- request = https://www.wildberries.ru/catalog/0/search.aspx?
+- response = json, csv, image, html
+```
+
 ## Methods of Array
 
 ---  
