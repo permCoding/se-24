@@ -24,6 +24,24 @@ const ex_03 = () => {
     log(JSON.stringify(srtArr, null, 4));
 }
 
+const ex_04 = () => {
+    let srtArr = _(arr)
+        .orderBy(['gender','age'], ['desc','asc'])
+        .value();
+    log(JSON.stringify(srtArr, null, 4));
+}
+
+const ex_05 = () => {
+    let srtArr = _(arr)
+        .orderBy(['gender','age'], ['desc','asc']);
+    for (let item of srtArr) {
+        log(JSON.stringify(item, null, 2));
+        // log(item.name);
+    }
+}
+
 // ex_01();
 // ex_02();
-ex_03();
+// ex_03();
+// ex_04();
+ex_05();
