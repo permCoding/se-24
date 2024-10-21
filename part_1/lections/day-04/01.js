@@ -7,6 +7,8 @@ const _every = (arr, div=2) => {
     return true;
 }
 
+// сделать по аналогии функцию _some
+
 let arr = [14, 20];
 let div = 3;
 
