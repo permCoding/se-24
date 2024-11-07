@@ -23,11 +23,23 @@
 Вам могут пригодиться эти методы:  
 
 ```js
+// нативные методы
 split(), slice(), map(), filter()  
-Object.keys(), Object.values()  
+Object.keys(), Object.values()
+// методы библиотеки lodash
 _.sortBy(), _.orderBy()  
 _.zip(), _.zipObject()  
 _.pick(),  _.pickBy()  
+```
+
+Для освоения методов библиотеки lodash можно использовать:  
+
+- [документацию lodash](https://lodash.com/docs/4.17.15)  
+- [chatGPT](https://deepai.org/chat)  
+
+Пример промпта для запроса к чату:  
+```txt
+Как отсортировать массив объектов json по двум разным полям с помощью библиотеки lodash на JS?
 ```
 
 ---  
