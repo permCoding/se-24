@@ -1,0 +1,34 @@
+[
+    {
+        "name": {
+            "first": "Оля",
+            "last": "Слепкань"
+        },
+        "age": 23,
+        "gender": "female"
+    },
+    {
+        "name": {
+            "first": "Андрей",
+            "last": "Беляков"
+        },
+        "age": 22,
+        "gender": "male"
+    },
+    {
+        "name": {
+            "first": "Олег",
+            "last": "Яшин"
+        },
+        "age": 21,
+        "gender": "male"
+    },
+    {
+        "name": {
+            "first": "Юля",
+            "last": "Копова"
+        },
+        "age": 24,
+        "gender": "female"
+    }
+]
