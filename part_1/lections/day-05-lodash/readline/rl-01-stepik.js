@@ -7,13 +7,13 @@ const rl = readline.createInterface({
 
 let lines = []; // массив для хранения считываемых строк
 
+const solver = () => console.log(
+    lines
+        .map(x => Number(x))
+        .filter(x => x%2 != 0)
+        .reduce((a,b) => a+b)
+);
+
 rl // обработчики событий
     .on('line', line => lines.push(line))
-    .on('close', () => { // Ctrl+D - для завершения
-        //
-        //
-        //
-        //
-        lines
-            .forEach(x => console.log(x));
-});
+    .on('close', solver);
