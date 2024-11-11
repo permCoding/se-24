@@ -2,11 +2,11 @@ const fs = require('fs');
 
 console.log('Введите несколько целых чисел:');
 
-const lines = fs.readFileSync(0, 'utf8');
+const txt = fs.readFileSync(0, 'utf8');
 
 console.log(
-    lines
-        .split('\n')
+    txt
+        .split('\n') // lines
         .map(x => +x)
         .filter(x => x%2)
         .reduce((a,b) => a+b, 0)

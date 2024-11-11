@@ -8,11 +8,11 @@ const rl = readline.createInterface({
 let lines = []; // массив для хранения считываемых строк
 
 const solver = () => console.log(
-    lines
-        .map(x => Number(x))
-        .filter(x => x%2 != 0)
-        .reduce((a,b) => a+b)
-);
+    lines[0]
+        .split(' ')
+        .map(x => +x)
+        .filter(x => x%2 == 0)[0]
+    );
 
 rl // обработчики событий
     .on('line', line => lines.push(line))
