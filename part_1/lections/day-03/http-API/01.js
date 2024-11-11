@@ -1,8 +1,9 @@
 const http = require('http'); // или https
-const port = 3000, host = 'localhost';
+const port = 3000, host = 'localhost'; // 127.0.0.1
 const server = http.createServer();
 
 const callback = (req, res) => {
+    console.log(req.url);
     res.setHeader('Content-Type', 'text/html; charset=utf8');
     res.end('JavaScript<br>Python');
 }

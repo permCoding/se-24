@@ -2,7 +2,6 @@ const http = require('http'); // или https
 const port = 3000, host = 'localhost';
 const stats = require("./json/statements.json").stats;
 
-
 const getRndInd = () => Math.floor( stats.length * Math.random() );
 
 const createResponse = (req, res) => {
