@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const port = 3000, host = 'localhost';
 const stats = require("./json/statements.json").stats;
-const FAVICON = path.join(__dirname, 'public', 'favicon.ico');
+const FAVICON = path.join(__dirname, 'public', 'favicon.ico'); // './public/favicon__.ico';
 const html = fs.readFileSync('./views/select.html', {encoding:'utf8'});
 
 const sendRandom = (req, res) => {
@@ -14,8 +14,7 @@ const sendRandom = (req, res) => {
 
 const sendIcon = (res) => {
     res.setHeader('Content-Type', 'image/x-icon');
-    res.end(FAVICON);
-    // fs.createReadStream(FAVICON).pipe(res); return;    
+    fs.createReadStream(FAVICON).pipe(res); return;
 }
 
 const sendByNumber = (req, res) => {
