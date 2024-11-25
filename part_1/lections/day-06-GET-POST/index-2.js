@@ -5,6 +5,7 @@ const fs = require('fs');
 const stats = require("./json/statements.json").stats;
 const port = 3000, host = 'localhost';
 const FAVICON = path.join(__dirname, 'public', 'favicon.ico');
+// const FAVICON = './public/favicon.ico';
 
 const html = require('fs').readFileSync('./views/index.html', {encoding:'utf8'});
 
@@ -12,8 +13,7 @@ const getRndInd = () => Math.floor( stats.length * Math.random() );
 
 const sendIcon = (res) => {
     res.setHeader('Content-Type', 'image/x-icon');
-    res.end(FAVICON);
-    // fs.createReadStream(FAVICON).pipe(res); return;    
+    fs.createReadStream(FAVICON).pipe(res); return;
 }
 
 const sendHtml = (req, res) => {
@@ -24,7 +24,7 @@ const sendHtml = (req, res) => {
     if (query) {
         const [par, value] = query.split('=');
         if (par == 'number') {
-            res.end( html.replace('POST', stats[value]) );    
+            res.end( html.replace('POST', stats[value]) );
         }
     } else {
         res.end( html.replace('POST', stats[getRndInd()]) );

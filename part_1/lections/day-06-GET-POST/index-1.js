@@ -11,10 +11,11 @@ const createResponse = (req, res) => {
 
     let url = req.url;
     let query = url.split('?')[1];
+    // http://localhost:3000/getByNumber?number=23  
     if (query) {
         const [par, value] = query.split('=');
         if (par == 'number') {
-            res.end( html.replace('POST', stats[value]) );    
+            res.end( html.replace('POST', stats[value]) );
         }
     } else {
         res.end( html.replace('POST', stats[getRndInd()]) );
