@@ -1,0 +1,1047 @@
+[
+    {
+        "id": 1,
+        "country": "Финлян­дия",
+        "rating": 100
+    },
+    {
+        "id": 2,
+        "country": "Новая Зелан­дия",
+        "rating": 99
+    },
+    {
+        "id": 3,
+        "country": "Швеция",
+        "rating": 99
+    },
+    {
+        "id": 4,
+        "country": "Норвегия",
+        "rating": 98
+    },
+    {
+        "id": 5,
+        "country": "Канада",
+        "rating": 97
+    },
+    {
+        "id": 6,
+        "country": "Дания",
+        "rating": 97
+    },
+    {
+        "id": 7,
+        "country": "Ирландия",
+        "rating": 97
+    },
+    {
+        "id": 8,
+        "country": "Люксем­бург",
+        "rating": 97
+    },
+    {
+        "id": 9,
+        "country": "Нидер­ланды",
+        "rating": 97
+    },
+    {
+        "id": 10,
+        "country": "Сан-Марино",
+        "rating": 97
+    },
+    {
+        "id": 11,
+        "country": "Бельгия",
+        "rating": 96
+    },
+    {
+        "id": 12,
+        "country": "Япония",
+        "rating": 96
+    },
+    {
+        "id": 13,
+        "country": "Порту­галия",
+        "rating": 96
+    },
+    {
+        "id": 14,
+        "country": "Словения",
+        "rating": 96
+    },
+    {
+        "id": 15,
+        "country": "Швей­цария",
+        "rating": 96
+    },
+    {
+        "id": 16,
+        "country": "Уругвай",
+        "rating": 96
+    },
+    {
+        "id": 17,
+        "country": "Австра­лия",
+        "rating": 95
+    },
+    {
+        "id": 18,
+        "country": "Эстония",
+        "rating": 95
+    },
+    {
+        "id": 19,
+        "country": "Барбадос",
+        "rating": 94
+    },
+    {
+        "id": 20,
+        "country": "Чили",
+        "rating": 94
+    },
+    {
+        "id": 21,
+        "country": "Чехия",
+        "rating": 94
+    },
+    {
+        "id": 22,
+        "country": "Исландия",
+        "rating": 94
+    },
+    {
+        "id": 23,
+        "country": "Тайвань",
+        "rating": 94
+    },
+    {
+        "id": 24,
+        "country": "Андорра",
+        "rating": 93
+    },
+    {
+        "id": 25,
+        "country": "Австрия",
+        "rating": 93
+    },
+    {
+        "id": 26,
+        "country": "Доминика",
+        "rating": 93
+    },
+    {
+        "id": 27,
+        "country": "Германия",
+        "rating": 93
+    },
+    {
+        "id": 28,
+        "country": "Маршал­ловы Острова",
+        "rating": 93
+    },
+    {
+        "id": 29,
+        "country": "Тувалу",
+        "rating": 93
+    },
+    {
+        "id": 30,
+        "country": "Кабо-Верде",
+        "rating": 92
+    },
+    {
+        "id": 31,
+        "country": "Кипр",
+        "rating": 92
+    },
+    {
+        "id": 32,
+        "country": "Микро­незия",
+        "rating": 92
+    },
+    {
+        "id": 33,
+        "country": "Палау",
+        "rating": 92
+    },
+    {
+        "id": 34,
+        "country": "Сент-Люсия",
+        "rating": 92
+    },
+    {
+        "id": 35,
+        "country": "Багам­ские Острова",
+        "rating": 91
+    },
+    {
+        "id": 36,
+        "country": "Коста-Рика",
+        "rating": 91
+    },
+    {
+        "id": 37,
+        "country": "Велико­британия",
+        "rating": 91
+    },
+    {
+        "id": 38,
+        "country": "Италия",
+        "rating": 90
+    },
+    {
+        "id": 39,
+        "country": "Кирибати",
+        "rating": 90
+    },
+    {
+        "id": 40,
+        "country": "Лихтен­штейн",
+        "rating": 90
+    },
+    {
+        "id": 41,
+        "country": "Словакия",
+        "rating": 90
+    },
+    {
+        "id": 42,
+        "country": "Испания",
+        "rating": 90
+    },
+    {
+        "id": 43,
+        "country": "Сент-Винсент и Гренадины",
+        "rating": 90
+    },
+    {
+        "id": 44,
+        "country": "Франция",
+        "rating": 89
+    },
+    {
+        "id": 45,
+        "country": "Гренада",
+        "rating": 89
+    },
+    {
+        "id": 46,
+        "country": "Литва",
+        "rating": 89
+    },
+    {
+        "id": 47,
+        "country": "Сент-Китс и Невис",
+        "rating": 89
+    },
+    {
+        "id": 48,
+        "country": "Латвия",
+        "rating": 88
+    },
+    {
+        "id": 49,
+        "country": "Белиз",
+        "rating": 87
+    },
+    {
+        "id": 50,
+        "country": "Мальта",
+        "rating": 87
+    },
+    {
+        "id": 51,
+        "country": "Антигуа и Барбуда",
+        "rating": 85
+    },
+    {
+        "id": 52,
+        "country": "Аргентина",
+        "rating": 85
+    },
+    {
+        "id": 53,
+        "country": "Греция",
+        "rating": 85
+    },
+    {
+        "id": 54,
+        "country": "Маврикий",
+        "rating": 85
+    },
+    {
+        "id": 55,
+        "country": "Монголия",
+        "rating": 84
+    },
+    {
+        "id": 56,
+        "country": "Самоа",
+        "rating": 84
+    },
+    {
+        "id": 57,
+        "country": "Сан-Томе и Принсипи",
+        "rating": 84
+    },
+    {
+        "id": 58,
+        "country": "Хорватия",
+        "rating": 83
+    },
+    {
+        "id": 59,
+        "country": "Панама",
+        "rating": 83
+    },
+    {
+        "id": 60,
+        "country": "Румыния",
+        "rating": 83
+    },
+    {
+        "id": 61,
+        "country": "Южная Корея",
+        "rating": 83
+    },
+    {
+        "id": 62,
+        "country": "Соеди­нён­ные Штаты Америки",
+        "rating": 83
+    },
+    {
+        "id": 63,
+        "country": "Монако",
+        "rating": 82
+    },
+    {
+        "id": 64,
+        "country": "Трини­дад и Тобаго",
+        "rating": 82
+    },
+    {
+        "id": 65,
+        "country": "Вануату",
+        "rating": 82
+    },
+    {
+        "id": 66,
+        "country": "Тонга",
+        "rating": 81
+    },
+    {
+        "id": 67,
+        "country": "Гана",
+        "rating": 80
+    },
+    {
+        "id": 68,
+        "country": "Ямайка",
+        "rating": 80
+    },
+    {
+        "id": 69,
+        "country": "Польша",
+        "rating": 80
+    },
+    {
+        "id": 70,
+        "country": "Сейшель­ские Острова",
+        "rating": 79
+    },
+    {
+        "id": 71,
+        "country": "Южная Африка",
+        "rating": 79
+    },
+    {
+        "id": 72,
+        "country": "Суринам",
+        "rating": 79
+    },
+    {
+        "id": 73,
+        "country": "Болгария",
+        "rating": 78
+    },
+    {
+        "id": 74,
+        "country": "Намибия",
+        "rating": 77
+    },
+    {
+        "id": 75,
+        "country": "Науру",
+        "rating": 77
+    },
+    {
+        "id": 76,
+        "country": "Северный Кипр",
+        "rating": 76
+    },
+    {
+        "id": 77,
+        "country": "Соломо­новы Острова",
+        "rating": 75
+    },
+    {
+        "id": 78,
+        "country": "Израиль",
+        "rating": 74
+    },
+    {
+        "id": 79,
+        "country": "Гайана",
+        "rating": 73
+    },
+    {
+        "id": 80,
+        "country": "Ботсвана",
+        "rating": 72
+    },
+    {
+        "id": 81,
+        "country": "Брази­лия",
+        "rating": 72
+    },
+    {
+        "id": 82,
+        "country": "Тимор-Лешти",
+        "rating": 72
+    },
+    {
+        "id": 83,
+        "country": "Колумбия",
+        "rating": 70
+    },
+    {
+        "id": 84,
+        "country": "Черногория",
+        "rating": 69
+    },
+    {
+        "id": 85,
+        "country": "Албания",
+        "rating": 68
+    },
+    {
+        "id": 86,
+        "country": "Домини­кан­ская Респуб­лика",
+        "rating": 68
+    },
+    {
+        "id": 87,
+        "country": "Эквадор",
+        "rating": 67
+    },
+    {
+        "id": 88,
+        "country": "Маке­дония",
+        "rating": 67
+    },
+    {
+        "id": 89,
+        "country": "Сенегал",
+        "rating": 67
+    },
+    {
+        "id": 90,
+        "country": "Боливия",
+        "rating": 66
+    },
+    {
+        "id": 91,
+        "country": "Фиджи",
+        "rating": 66
+    },
+    {
+        "id": 92,
+        "country": "Индия",
+        "rating": 66
+    },
+    {
+        "id": 93,
+        "country": "Лесото",
+        "rating": 66
+    },
+    {
+        "id": 94,
+        "country": "Малави",
+        "rating": 66
+    },
+    {
+        "id": 95,
+        "country": "Перу",
+        "rating": 66
+    },
+    {
+        "id": 96,
+        "country": "Венгрия",
+        "rating": 65
+    },
+    {
+        "id": 97,
+        "country": "Либерия",
+        "rating": 64
+    },
+    {
+        "id": 98,
+        "country": "Бутан",
+        "rating": 63
+    },
+    {
+        "id": 99,
+        "country": "Парагвай",
+        "rating": 63
+    },
+    {
+        "id": 100,
+        "country": "Непал",
+        "rating": 62
+    },
+    {
+        "id": 101,
+        "country": "Бенин",
+        "rating": 61
+    },
+    {
+        "id": 102,
+        "country": "Молдова",
+        "rating": 61
+    },
+    {
+        "id": 103,
+        "country": "Папуа — Новая Гвинея",
+        "rating": 61
+    },
+    {
+        "id": 104,
+        "country": "Косово",
+        "rating": 60
+    },
+    {
+        "id": 105,
+        "country": "Мексика",
+        "rating": 60
+    },
+    {
+        "id": 106,
+        "country": "Сьерра-Леоне",
+        "rating": 60
+    },
+    {
+        "id": 107,
+        "country": "Грузия",
+        "rating": 58
+    },
+    {
+        "id": 108,
+        "country": "Мада­гаскар",
+        "rating": 58
+    },
+    {
+        "id": 109,
+        "country": "Филип­пины",
+        "rating": 58
+    },
+    {
+        "id": 110,
+        "country": "Индо­незия",
+        "rating": 57
+    },
+    {
+        "id": 111,
+        "country": "Сербия",
+        "rating": 57
+    },
+    {
+        "id": 112,
+        "country": "Армения",
+        "rating": 54
+    },
+    {
+        "id": 113,
+        "country": "Шри-Ланка",
+        "rating": 54
+    },
+    {
+        "id": 114,
+        "country": "Замбия",
+        "rating": 54
+    },
+    {
+        "id": 115,
+        "country": "Сальва­дор",
+        "rating": 53
+    },
+    {
+        "id": 116,
+        "country": "Малай­зия",
+        "rating": 53
+    },
+    {
+        "id": 117,
+        "country": "Кения",
+        "rating": 52
+    },
+    {
+        "id": 118,
+        "country": "Босния и Герцего­вина",
+        "rating": 51
+    },
+    {
+        "id": 119,
+        "country": "Тунис",
+        "rating": 51
+    },
+    {
+        "id": 120,
+        "country": "Гамбия",
+        "rating": 50
+    },
+    {
+        "id": 121,
+        "country": "Кот-д’Ивуар",
+        "rating": 49
+    },
+    {
+        "id": 122,
+        "country": "Украина",
+        "rating": 49
+    },
+    {
+        "id": 123,
+        "country": "Гондурас",
+        "rating": 48
+    },
+    {
+        "id": 124,
+        "country": "Сингапур",
+        "rating": 48
+    },
+    {
+        "id": 125,
+        "country": "Гвате­мала",
+        "rating": 46
+    },
+    {
+        "id": 126,
+        "country": "Мальдивы",
+        "rating": 44
+    },
+    {
+        "id": 127,
+        "country": "Мозамбик",
+        "rating": 44
+    },
+    {
+        "id": 128,
+        "country": "Нигерия",
+        "rating": 44
+    },
+    {
+        "id": 129,
+        "country": "Гвинея-Бисау",
+        "rating": 43
+    },
+    {
+        "id": 130,
+        "country": "Сомалиленд",
+        "rating": 43
+    },
+    {
+        "id": 131,
+        "country": "Комор­ские Острова",
+        "rating": 42
+    },
+    {
+        "id": 132,
+        "country": "Ливан",
+        "rating": 42
+    },
+    {
+        "id": 133,
+        "country": "Того",
+        "rating": 42
+    },
+    {
+        "id": 134,
+        "country": "Гонконг",
+        "rating": 41
+    },
+    {
+        "id": 135,
+        "country": "Бангла­деш",
+        "rating": 40
+    },
+    {
+        "id": 136,
+        "country": "Абхазия",
+        "rating": 39
+    },
+    {
+        "id": 137,
+        "country": "Маври­тания",
+        "rating": 39
+    },
+    {
+        "id": 138,
+        "country": "Кувейт",
+        "rating": 38
+    },
+    {
+        "id": 139,
+        "country": "Марокко",
+        "rating": 37
+    },
+    {
+        "id": 140,
+        "country": "Танзания",
+        "rating": 36
+    },
+    {
+        "id": 141,
+        "country": "Таиланд",
+        "rating": 36
+    },
+    {
+        "id": 142,
+        "country": "Пакистан",
+        "rating": 35
+    },
+    {
+        "id": 143,
+        "country": "Уганда",
+        "rating": 34
+    },
+    {
+        "id": 144,
+        "country": "Иордания",
+        "rating": 33
+    },
+    {
+        "id": 145,
+        "country": "Нигер",
+        "rating": 33
+    },
+    {
+        "id": 146,
+        "country": "Турция",
+        "rating": 33
+    },
+    {
+        "id": 147,
+        "country": "Алжир",
+        "rating": 32
+    },
+    {
+        "id": 148,
+        "country": "Гвинея",
+        "rating": 30
+    },
+    {
+        "id": 149,
+        "country": "Гаити",
+        "rating": 30
+    },
+    {
+        "id": 150,
+        "country": "Ирак",
+        "rating": 30
+    },
+    {
+        "id": 151,
+        "country": "Пакистанский Кашмир",
+        "rating": 29
+    },
+    {
+        "id": 152,
+        "country": "Ангола",
+        "rating": 28
+    },
+    {
+        "id": 153,
+        "country": "Бруней",
+        "rating": 28
+    },
+    {
+        "id": 154,
+        "country": "Буркина Фасо",
+        "rating": 27
+    },
+    {
+        "id": 155,
+        "country": "Кыргыз­стан",
+        "rating": 27
+    },
+    {
+        "id": 156,
+        "country": "Зимбабве",
+        "rating": 27
+    },
+    {
+        "id": 157,
+        "country": "Индийский Кашмир",
+        "rating": 26
+    },
+    {
+        "id": 158,
+        "country": "Мали",
+        "rating": 26
+    },
+    {
+        "id": 159,
+        "country": "Катар",
+        "rating": 25
+    },
+    {
+        "id": 160,
+        "country": "Джибути",
+        "rating": 24
+    },
+    {
+        "id": 161,
+        "country": "Оман",
+        "rating": 24
+    },
+    {
+        "id": 162,
+        "country": "Камбоджа",
+        "rating": 23
+    },
+    {
+        "id": 163,
+        "country": "Казах­стан",
+        "rating": 23
+    },
+    {
+        "id": 164,
+        "country": "Руанда",
+        "rating": 23
+    },
+    {
+        "id": 165,
+        "country": "Палестина — Западный берег реки Иордан",
+        "rating": 22
+    },
+    {
+        "id": 166,
+        "country": "Эфиопия",
+        "rating": 20
+    },
+    {
+        "id": 167,
+        "country": "Габон",
+        "rating": 20
+    },
+    {
+        "id": 168,
+        "country": "Демо­крати­ческая Респу­блика Конго",
+        "rating": 19
+    },
+    {
+        "id": 169,
+        "country": "Вьетнам",
+        "rating": 19
+    },
+    {
+        "id": 170,
+        "country": "Египет",
+        "rating": 18
+    },
+    {
+        "id": 171,
+        "country": "Объе­динён­ные Арабские Эмираты",
+        "rating": 18
+    },
+    {
+        "id": 172,
+        "country": "Конго",
+        "rating": 17
+    },
+    {
+        "id": 173,
+        "country": "Свази­ленд",
+        "rating": 17
+    },
+    {
+        "id": 174,
+        "country": "Приднестровье",
+        "rating": 17
+    },
+    {
+        "id": 175,
+        "country": "Никарагуа",
+        "rating": 16
+    },
+    {
+        "id": 176,
+        "country": "Камерун",
+        "rating": 15
+    },
+    {
+        "id": 177,
+        "country": "Чад",
+        "rating": 15
+    },
+    {
+        "id": 178,
+        "country": "Вене­суэла",
+        "rating": 15
+    },
+    {
+        "id": 179,
+        "country": "Бурунди",
+        "rating": 14
+    },
+    {
+        "id": 180,
+        "country": "Лаос",
+        "rating": 13
+    },
+    {
+        "id": 181,
+        "country": "Россия",
+        "rating": 13
+    },
+    {
+        "id": 182,
+        "country": "Бахрейн",
+        "rating": 12
+    },
+    {
+        "id": 183,
+        "country": "Куба",
+        "rating": 12
+    },
+    {
+        "id": 184,
+        "country": "Южная Осетия",
+        "rating": 12
+    },
+    {
+        "id": 185,
+        "country": "Узбеки­стан",
+        "rating": 12
+    },
+    {
+        "id": 186,
+        "country": "Иран",
+        "rating": 11
+    },
+    {
+        "id": 187,
+        "country": "Йемен",
+        "rating": 10
+    },
+    {
+        "id": 188,
+        "country": "Китай",
+        "rating": 9
+    },
+    {
+        "id": 189,
+        "country": "Ливия",
+        "rating": 9
+    },
+    {
+        "id": 190,
+        "country": "Беларусь",
+        "rating": 8
+    },
+    {
+        "id": 191,
+        "country": "Палестина — Газа",
+        "rating": 8
+    },
+    {
+        "id": 192,
+        "country": "Мьянма",
+        "rating": 8
+    },
+    {
+        "id": 193,
+        "country": "Саудов­ская Аравия",
+        "rating": 8
+    },
+    {
+        "id": 194,
+        "country": "Сомали",
+        "rating": 8
+    },
+    {
+        "id": 195,
+        "country": "Азербай­джан",
+        "rating": 7
+    },
+    {
+        "id": 196,
+        "country": "Афгани­стан",
+        "rating": 6
+    },
+    {
+        "id": 197,
+        "country": "Судан",
+        "rating": 6
+    },
+    {
+        "id": 198,
+        "country": "Цент­рально-Афри­кан­ская Респуб­лика",
+        "rating": 5
+    },
+    {
+        "id": 199,
+        "country": "Экватори­альная Гвинея",
+        "rating": 5
+    },
+    {
+        "id": 200,
+        "country": "Таджики­стан",
+        "rating": 5
+    },
+    {
+        "id": 201,
+        "country": "Западная Сахара",
+        "rating": 4
+    },
+    {
+        "id": 202,
+        "country": "Эритрея",
+        "rating": 3
+    },
+    {
+        "id": 203,
+        "country": "Север­ная Корея",
+        "rating": 3
+    },
+    {
+        "id": 204,
+        "country": "Крым",
+        "rating": 2
+    },
+    {
+        "id": 205,
+        "country": "Туркмени­стан",
+        "rating": 2
+    },
+    {
+        "id": 206,
+        "country": "Южный Судан",
+        "rating": 1
+    },
+    {
+        "id": 207,
+        "country": "Сирия",
+        "rating": 1
+    },
+    {
+        "id": 208,
+        "country": "Тибет",
+        "rating": 0
+    },
+    {
+        "id": 209,
+        "country": "Нагорный Карабах",
+        "rating": -3
+    }
+]
