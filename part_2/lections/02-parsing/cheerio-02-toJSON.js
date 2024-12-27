@@ -44,11 +44,23 @@ const ex_04 = (html) => {  // для Node.js + cheerio
         .toArray();
 }
 
+const ex_05 = (html) => {  // для Node.js + cheerio
+    const $ = cheerio.load(html);
+    return $('a')
+        .toArray()
+        .map(elm => (
+            {
+                "text": +$(elm).text(), 
+                "href": $(elm).attr('href')
+            }
+        ));
+}
+
 let html = `
     <a href="index1.html">1001</a>
     <a href="index2.html">1002</a>
     <a href="index3.html">1003</a>
 `
 
-let results = ex_04(html);
-console.log('results = ', results);
+let _json = ex_05(html);
+console.log('_json = ', JSON.stringify(_json, null, 4));
