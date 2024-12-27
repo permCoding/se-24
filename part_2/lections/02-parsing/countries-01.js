@@ -1,3 +1,4 @@
+// npm install cheerio sync-request
 const request = require('sync-request');
 const cheerio = require('cheerio');
 
@@ -17,12 +18,12 @@ const fetchAndParse = (url) => {
         const html = get_html(url);
         const $ = cheerio.load(html);
 
-        const table = $('#study-dataset').find('.table');
+        const element = $('#study-dataset'); // by id
 
-        if (table.length) { // если элемент найден
-            log('Найденный элемент:', table.html());
+        if (element.length) { // если элемент найден
+            log('Найденный элемент:', element.html());
         } else {
-            log('Элемент не найден');
+            log('Элемент с данным id не найден');
         }
     } catch (error) {
         log(error);
@@ -30,9 +31,3 @@ const fetchAndParse = (url) => {
 }
 
 fetchAndParse('https://gtmarket.ru/ratings/freedom-in-the-world');
-
-/*
-    $('h1').each((index, element) => {
-        console.log($(element).text());
-    });
-*/

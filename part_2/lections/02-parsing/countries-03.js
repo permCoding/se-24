@@ -43,14 +43,8 @@ const get_data = (url) => {
 }
 
 const data = get_data('https://gtmarket.ru/ratings/freedom-in-the-world');
+
 log(data.length);
 let json_str = JSON.stringify(data, null, 4);
 log(json_str);
 require('fs').writeFileSync('./countries_rating.json', json_str);
-
-
-/*
-    $('h1').each((index, element) => {
-        console.log($(element).text());
-    });
-*/
