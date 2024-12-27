@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2",
+    "lastName": "Бортич",
+    "rating": "224",
+    "gender": "0",
+    "birthDate": "2002-06-03",
+    "city": "Лысьва"
+  },
+  {
+    "id": "13",
+    "lastName": "Микова",
+    "rating": "222",
+    "gender": "0",
+    "birthDate": "2001-10-07",
+    "city": "Пермь"
+  },
+  {
+    "id": "1",
+    "lastName": "Мишкин",
+    "rating": "217",
+    "gender": "1",
+    "birthDate": "2002-08-23",
+    "city": "Кунгур"
+  },
+  {
+    "id": "12",
+    "lastName": "Ежова",
+    "rating": "214",
+    "gender": "0",
+    "birthDate": "2001-10-07",
+    "city": "Лысьва"
+  },
+  {
+    "id": "5",
+    "lastName": "Хомич",
+    "rating": "205",
+    "gender": "0",
+    "birthDate": "2002-04-23",
+    "city": "Кунгур"
+  }
+]
