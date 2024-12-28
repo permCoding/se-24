@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/es.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    
+    <br>
+    <!-- передали массив объектов -->
+    <table class="dialog">
+        <% for (let i = 0; i < arr.length; i++) { %>
+        <tr>
+            <td class="item">
+                <%= arr[i].id %>
+            </td>
+            <td class="item">
+                <%=arr[i].lastName%>
+            </td>
+            <td class="item">
+                <%=arr[i].rating%>
+            </td>
+            
+            <% if (arr[i].gender == '1') {
+                gender = 'male'    
+            } else {
+                gender = 'female'
+            } %>
+
+            <td class="item"> <%= gender %> </td>
+
+            <!-- 
+                <td class="item">
+                    <%= arr[i].gender == 1? 'М': 'Ж' %> 
+                </td>
+            -->
+
+            <td class="item">
+                <%=arr[i].city%>
+            </td>
+        </tr>
+        <% } %>
+    </table>
+
+</body>
+</html>

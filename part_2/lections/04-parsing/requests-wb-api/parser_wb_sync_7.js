@@ -1,0 +1,30 @@
+const request = require('request') // npm i request
+const log = console.log
+
+const get_json_from_url = (url) => {
+    return new Promise((resolve, reject) => {
+        request.get(url, (error, response, data) => {
+            if (error) reject(error)
+            resolve(JSON.parse(data))
+        })
+    })
+}
+
+const process = async () => {
+    let arr = []
+    let num = 1, count_pages = 3
+    while (num++ <= count_pages) {
+        let url = `https://search.wb.ru/exactmatch/ru/common/v4/search?TestGroup=no_test&TestID=no_test&appType=1&curr=rub&dest=12358373&page=${num}&query=ytn%2Cer&resultset=catalog&sort=popular&spp=29&suppressSpellcheck=false&uclusters=1`
+        let json = await get_json_from_url(url)
+        let arr_add = json
+            .data
+            .products
+            .map(elm => elm.brand)
+            .filter(x => x != '')
+        arr = [...arr, ...arr_add]
+    }
+    log(arr)
+    log(arr.length)
+}
+
+process()

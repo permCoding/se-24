@@ -1,0 +1,42 @@
+<form>
+<tbody>
+<% for (let item of arr) { %>
+    <tr>
+    <% for (let title of keys) { %>
+        
+        <% if (title === 'id') { %> 
+            <% zero = (+item['id']<10) ? '0': '' %>
+            <td class="id td-del">
+                
+                <button 
+                    name="delId"
+                    type="submit" 
+                    class="del"
+                    formaction="/delete/<%=item['id']%>" 
+                    formmethod="post">
+                    <%= zero + item['id'] %>
+                </button> <!-- из html работают только get и post -->
+
+                <button 
+                    name="delId"
+                    type="submit" 
+                    class="del"
+                    formaction="/del/" 
+                    formmethod="post"
+                    value="<%= item['id'] %>">
+                    <%= zero + item['id'] %>
+                </button> <!-- из html работают только get и post -->
+
+            </td>
+
+        <% } else { %>
+
+            <td class="item"> <%= item[title] %> </td>
+
+        <% } %>
+
+    <% } %>
+    </tr>
+<%} %>
+</tbody>
+</form>

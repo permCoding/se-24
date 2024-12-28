@@ -1,0 +1,56 @@
+<head>
+    <style>
+        .c-input {
+            min-width: 250px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            padding: 8px 0px;
+            background-color: antiquewhite;
+            border: 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .c-button {
+            min-width: 250px;
+            font-family: inherit;
+            appearance: none;
+            border: 0;
+            border-radius: 5px;
+            background: #4676d7;
+            color: #fff;
+            padding: 18px 16px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .c-button:hover {
+            background: #1d49aa;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>  <!-- это просто для проверки работоспособности -->
+    <button 
+        class="c-button" 
+        type="button" 
+        onclick="location.href='http://localhost:3000/abiturs'">
+        Go to on abiturs
+    </button> 
+    <button 
+        class="c-button" 
+        type="button" 
+        onclick="location.href='http://localhost:3000/abiturs/limit/2'">
+        Go to on abiturs/limit/2
+    </button>
+    <br><br>
+    <form name="formlimit">
+        <input class="c-input" type="text" name="limit" value="limit"><br>
+        <button 
+            class="c-button" 
+            type="button" 
+            onclick="location.href='http://localhost:3000/abiturs/limit/'+escape(document.forms['formlimit'].elements['limit'].value)">
+            Go to on abiturs/limit/__
+        </button>
+    </form>
+</body>
+
+

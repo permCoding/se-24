@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+
+    <table class="dialog">
+
+        <%- include("./partials/thead.ejs", { keys, titles }) %>
+        <%- include("./partials/tbody-del.ejs", { keys, arr }) %>
+    
+    </table>
+
+<!-- 
+    пользователь выбирает кого удалить 
+-->
+</body>
+</html>

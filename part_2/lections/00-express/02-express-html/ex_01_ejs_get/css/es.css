@@ -1,0 +1,64 @@
+body {
+    background: url(../css/bg_grid.png) repeat ;
+    background-color: #f6fff5;
+    color: rgb(16, 45, 28);
+    font-family: "Comic Sans MS", serif;
+    font-size: 16px;
+}
+div {
+    text-align: center;
+}
+table {
+    width: 70%;
+    margin: auto;
+}
+tr:nth-child(odd) { 
+    background-color: #CFEFDF; 
+}
+tr:nth-child(even) { 
+    background-color: #CFE5DF; 
+}
+td {
+    height: 36px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+}
+td.id {
+    font-size: 12px;
+    font-family: "Courier", serif;
+    font-weight: bolder;
+    color: green;
+}
+td.item {
+    text-align: left;
+    padding-left: 15px;
+}
+a { 
+    color: #21665f;
+    text-decoration: none;
+}
+a:visited {
+    color: #21665f;
+}
+a:hover {
+    color: rgb(168, 25, 82);
+    font-weight: bold;
+    text-decoration: none;
+}
+textarea {
+    width: 70%;
+    color: initial;
+    display: inline-block;
+    background-color: rgb(236, 250, 232);
+    resize: vertical;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font: 500 14px "Courier New";
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    padding: 2px;
+}

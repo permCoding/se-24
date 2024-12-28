@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>engine HBS</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+
+<body>
+    <center>
+    <form>
+        <input 
+            type="text" 
+            name="city" 
+            value="" 
+            placeholder="2024-03-24"  required /> <br>
+        <button 
+            type="submit" 
+            class="del"
+            formaction="/getByCity" 
+            formmethod="get">
+            Получить по Городу
+        </button>
+    </form>
+
+    </center>
+    <br>
+    {{! Этот коммент останется на сервере }}
+    {{! https://handlebarsjs.com/guide/builtin-helpers.html }}
+    {{! а следующий коммент уйдёт к клиенту }}
+    <!-- передали массив объектов -->
+    <table class="dialog">
+        {{#each arr}}
+        <tr>
+            <td class="item">
+                {{this.id}}
+            </td>
+            <td class="item">
+                {{this.lastName}}
+            </td>
+            <td class="item">
+                {{this.rating}}
+            </td>
+            <td class="item"> {{! if только true/false }}
+                {{#if this.gender}}м{{else}}ж{{/if}}
+            </td>
+            <td class="item">
+                {{this.city}}
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+
+</body>
+</html>

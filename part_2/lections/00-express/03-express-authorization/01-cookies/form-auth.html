@@ -1,0 +1,18 @@
+<form>
+
+    <input type="text" id="login" name="login" 
+        minlength="1" maxlength="255" size="12" required
+        placeholder="login"> 
+    <!--value="<%=fill.lastName%>"--> <br>
+    
+    <input type="password" id="pass" name="password" 
+        minlength="1" size="12" required> 
+    
+    <br> <br>
+    <button id="send_pass" formaction="/login" formmethod="post" type="submit">
+        input password
+    </button>
+
+    <p></p>
+
+</form>

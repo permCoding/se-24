@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+    <%- include("./partials/buttons.ejs", { }) %>
+
+    <table class="dialog">
+
+        <%- include("./partials/thead.ejs", { keys, titles }) %>
+        <%- include("./partials/tbody.ejs", { keys, arr }) %>
+    
+    </table>
+
+<!-- 
+    программист устанавливает порядок полей
+    пользователь выбирает поля из checkBoxs и
+    направление сортировки RadioButton 
+-->
+</body>
+</html>

@@ -1,0 +1,13 @@
+.block {
+    font-size: 40px;
+    height: 85%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5e5e5e;
+    background-image: url('/avatar.jpg');
+    background-size: 25%;
+    background-repeat: no-repeat;
+}

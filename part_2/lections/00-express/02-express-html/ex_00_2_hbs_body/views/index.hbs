@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>engine HBS</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+
+<body>
+    <center>
+        <!-- функция getCount из index.js -->
+        <p>Общее количество записей: {{getCount}}</p>
+        <!-- форма с кнопками -->
+        {{>form}} 
+        <br>
+        <!-- таблица с данными -->
+        {{>table}} 
+    </center>
+</body>
+</html>
+
+    {{! https://handlebarsjs.com/guide/builtin-helpers.html }}
+    {{! https://nodejsdev.ru/guides/metanit/express-handlebars-partial/ }}

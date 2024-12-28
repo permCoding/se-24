@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/es.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <br>
+
+    <table class="dialog">
+        <tr> <!-- формируем заголовки -->
+            <% for (let title in titles) { %>
+                <th>
+                    <%= titles[title] %>
+                </th>
+            <% } %>
+        </tr>
+        <% for (let item of arr) { %>
+            <tr>
+                <% for (let key of keys) { %>
+                    <td class="item">
+                        <%= item[key] %>
+                    </td>
+                <% } %>
+            </tr>
+        <%} %>
+    </table>
+
+</body>
+</html>

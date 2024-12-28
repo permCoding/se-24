@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/es.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <br>
+
+    <table class="dialog">
+        <tr> <!-- формируем заголовки -->
+            <% for (let title in titles) { %>
+                <% if (keys.includes(title)) { %>
+                    <th>
+                        <%= titles[title] %>
+                    </th>
+                <% } %>
+            <% } %>
+        </tr>
+        <% for (let item of arr) { %>
+        <tr> <!-- программист устанавливает порядок полей -->
+            <% for (let title in titles) { %>
+                <% if (keys.includes(title)) { %>
+                    <td class="item">
+                        <%= item[title] %>
+                    </td>
+                <% } %>
+            <% } %>
+        </tr> <!-- наличие поля выбирает пользователь -->
+        <%} %>
+    </table>
+
+</body>
+</html>

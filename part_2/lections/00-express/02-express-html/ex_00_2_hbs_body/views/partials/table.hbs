@@ -1,0 +1,21 @@
+<table class="dialog">
+    {{#each arr}}
+    <tr>
+        <td class="item">
+            {{this.id}}
+        </td>
+        <td class="item">
+            {{this.lastName}}
+        </td>
+        <td class="item">
+            {{this.rating}}
+        </td>
+        <td class="item"> {{! if только true/false }}
+            {{#if this.gender}}м{{else}}ж{{/if}}
+        </td>
+        <td class="item">
+            {{this.city}}
+        </td>
+    </tr>
+    {{/each}}
+</table>

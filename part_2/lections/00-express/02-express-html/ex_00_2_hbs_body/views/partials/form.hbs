@@ -1,0 +1,21 @@
+<form>
+    <input 
+        type="text" 
+        name="city" 
+        value="" 
+        placeholder="Пермь"  required /> &nbsp;
+    <button 
+        type="submit" 
+        class=""
+        formaction="/getByCityGet" 
+        formmethod="get">
+        Получить по Городу (query)
+    </button>
+    <button 
+        type="submit" 
+        class=""
+        formaction="/getByCityPost" 
+        formmethod="post">
+        Получить по Городу (body)
+    </button>
+</form>

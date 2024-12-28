@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+
+    
+    <div>
+        <h3>Добавить абитуриента</h3>
+
+        <form>
+            <input class="value"
+                type="text" 
+                name="lastName" 
+                minlength="1" maxlength="255" size="32" required
+                placeholder=<%= fill.lastName %> 
+                <!--value="<%=fill.lastName%>"--> <br>
+
+            <input class="value" 
+                type="number" 
+                name="rating" 
+                placeholder="Рейтинг"
+                value="<%=fill.rating%>" /> <br>
+
+            <br>Укажите гендер:
+            <input type="radio" name="gender" value="1" checked /> М
+            <input type="radio" name="gender" value="0" /> Ж
+            <br><br>
+
+            <button class="green"
+                formaction="/abiturs/new" 
+                formmethod="post" 
+                type="submit">
+                Добавить
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>

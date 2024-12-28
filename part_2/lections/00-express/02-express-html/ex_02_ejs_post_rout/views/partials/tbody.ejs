@@ -1,0 +1,12 @@
+<tbody>
+    <% for (let item of arr) { %>
+        <tr>
+            <% for (let key of keys) { %>
+                <% tdClass = (key === 'id')? 'id': 'item' %>
+                <td class="<%=tdClass%>">
+                    <%= item[key] %>
+                </td>
+            <% } %>
+        </tr>
+    <% } %>
+</tbody>

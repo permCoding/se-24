@@ -1,0 +1,14 @@
+{
+    "page": 1,
+    "ab_testing": false,
+    "appType": 1,
+    "curr": "rub",
+    "dest": 12358373,
+    "query": "ноутбук",
+    "resultset": "catalog",
+    "sort": "popular",
+    "spp": 30,
+    "suppressSpellcheck": false,
+    "uclusters": 1,
+    "uiv": 2
+}

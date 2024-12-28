@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>    
+    <div>
+        <h3>Сформируйте запрос:</h3>
+
+        <form>
+            
+            <br>Укажите какие поля выбрать:<br>
+            <% for (let title in titles) { %>
+                <input type="checkbox" name="keys" value="<%=title%>" /> 
+                <%=titles[title]%> <br>
+            <% } %>
+            <br> <!-- checkbox передаётся как массив keys: ['lastName', 'rating'] -->
+
+            <br>Укажите поле для сортировки:<br>
+            <% for (let title in titles) { %>
+                <input type="radio" name="sortField" value="<%=title%>" /> 
+                <%=titles[title]%> <br>
+            <% } %>
+            <br> <!-- radio передаётся только выбранная value -->
+
+            <br>Укажите направление сортировки:
+            <br><input type="radio" name="direct" value="asc" checked /> по возрастанию
+            <br><input type="radio" name="direct" value="desc" /> по убыванию
+            <br><br> <!-- radio передаётся только выбранная value -->
+
+            <button class="green"
+                formaction="/abiturs/fields" 
+                formmethod="post" 
+                type="submit">
+                Получить данные
+            </button>
+
+        </form>
+    </div>
+</body>
+</html>

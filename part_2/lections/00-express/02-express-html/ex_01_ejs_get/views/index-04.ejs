@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/es.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <br>
+
+    <% arrayTitles = Object
+        .keys(titles)
+        .filter(title => keys.includes(title)) %>
+
+    <table class="dialog">
+
+        <tr>
+            <% arrayTitles.forEach(title => { %>
+                <th> <%= titles[title] %> </th>
+            <% }) %>
+        </tr>
+
+        <% arr
+            .sort((a,b) => a[sortField] > b[sortField]? +1: -1)
+            .forEach(item => { %>
+            <tr>
+                <% arrayTitles.forEach(title => { %>
+                    <% tdClass = (title === 'id')? 'id': 'item' %>
+                    <td class="<%=tdClass%>">
+                        <%= item[title] %> 
+                    </td>
+                <% }) %>
+            </tr>
+        <% }) %>
+        
+    </table>
+
+</body>
+</html>

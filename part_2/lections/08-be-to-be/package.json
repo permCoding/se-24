@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.19.1",
+    "sync-request": "^6.1.0"
+  }
+}
