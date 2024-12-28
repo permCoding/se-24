@@ -13,16 +13,16 @@ function getListDir(pathDir) {
 
 
 async function readDirectory(pathDir) {
+    log('   ==> START');
     try {
         const files = await getListDir(pathDir);
         log('Файлы и папки в директории:', files);
     } catch (error) {
         log('Ошибка при чтении директории:', error);
     }
+    log('   ==> END'); // Good!
 }
 
 
 let pathDir = __dirname;
-log('   ==> START');
 readDirectory(pathDir);
-log('   ==> END') // fail :(
