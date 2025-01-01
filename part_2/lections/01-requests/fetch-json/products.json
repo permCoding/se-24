@@ -1,0 +1,296 @@
+[
+    {
+        "brand": "Dream Tech",
+        "colors": [
+            {
+                "name": "серый"
+            }
+        ],
+        "name": "Коврик для мышки компьютерный резиновый 24х20х1см",
+        "priceU": 9000,
+        "salePriceU": 9000,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "Dream Tech",
+        "colors": [
+            {
+                "name": "голубой"
+            }
+        ],
+        "name": "Коврик для мышки компьютерный резиновый 24х20х1см",
+        "priceU": 9000,
+        "salePriceU": 9000,
+        "volume": 12,
+        "rating": 5
+    },
+    {
+        "brand": "Dream Tech",
+        "colors": [
+            {
+                "name": "голубой"
+            }
+        ],
+        "name": "Коврик для мышки компьютерный резиновый 24х20х1см",
+        "priceU": 9000,
+        "salePriceU": 9000,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "Dream Tech",
+        "colors": [
+            {
+                "name": "черный"
+            },
+            {
+                "name": "красный"
+            },
+            {
+                "name": "желтый"
+            }
+        ],
+        "name": "Коврик для мышки компьютерный резиновый 24х20х1см",
+        "priceU": 9000,
+        "salePriceU": 9000,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "VS",
+        "colors": [
+            {
+                "name": "желтый"
+            }
+        ],
+        "name": "Коврик для мыши Фауна 194х233х3 мм",
+        "priceU": 20000,
+        "salePriceU": 9800,
+        "volume": 6,
+        "rating": 4
+    },
+    {
+        "brand": "Perfeo",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Коврик для мышки маленький NN (220*180*2 мм)",
+        "priceU": 12000,
+        "salePriceU": 10400,
+        "volume": 6,
+        "rating": 5
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.15 см",
+        "priceU": 15300,
+        "salePriceU": 10700,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "АвтоХаус",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Универсальный игровой компьютерный коврик для мышки на стол",
+        "priceU": 27000,
+        "salePriceU": 11000,
+        "volume": 21,
+        "rating": 4
+    },
+    {
+        "brand": "",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "коврики компьютерные",
+        "priceU": 100000,
+        "salePriceU": 11000,
+        "volume": 11,
+        "rating": 5
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Gembird",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Игровой коврик для мышки 220х180х1мм",
+        "priceU": 20000,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 5
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Speraphina",
+        "colors": [],
+        "name": "Коврик для мыши большой 22х18х0.2 см",
+        "priceU": 15300,
+        "salePriceU": 11400,
+        "volume": 4,
+        "rating": 0
+    },
+    {
+        "brand": "Автомодель",
+        "colors": [
+            {
+                "name": "черный"
+            },
+            {
+                "name": "серый"
+            }
+        ],
+        "name": "Коврик для мышки компьютерный",
+        "priceU": 28000,
+        "salePriceU": 11400,
+        "volume": 22,
+        "rating": 4
+    },
+    {
+        "brand": "",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Коврик компьютерный для мыши игровой",
+        "priceU": 40000,
+        "salePriceU": 11600,
+        "volume": 9,
+        "rating": 5
+    },
+    {
+        "brand": "SPEED STITCH",
+        "colors": [],
+        "name": "Коврик для мышки игровой",
+        "priceU": 19000,
+        "salePriceU": 11700,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "CBR",
+        "colors": [
+            {
+                "name": "голубой"
+            }
+        ],
+        "name": "Коврик CMP-024 Таблица Умножения",
+        "priceU": 12100,
+        "salePriceU": 11700,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "CBR",
+        "colors": [
+            {
+                "name": "голубой"
+            }
+        ],
+        "name": "Коврик CMP 023 Таблица Менделеева",
+        "priceU": 12100,
+        "salePriceU": 11700,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "CBR",
+        "colors": [
+            {
+                "name": "зеленый"
+            }
+        ],
+        "name": "Коврик CMP-027 English, учебный",
+        "priceU": 12100,
+        "salePriceU": 11700,
+        "volume": 5,
+        "rating": 5
+    },
+    {
+        "brand": "CBR",
+        "colors": [
+            {
+                "name": "желтый"
+            }
+        ],
+        "name": "Коврик Simple S9 Angel",
+        "priceU": 12100,
+        "salePriceU": 12100,
+        "volume": 16,
+        "rating": 5
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "ab_testing":   false,
+        "appType":  1,
+        "curr":  "rub",
+        "dest":  12358373,
+        "page":  1,
+        "query":  "коврик для мышки",
+        "resultset":  "catalog",
+        "sort":  "priceup",
+        "spp":  30,
+        "suppressSpellcheck":  false,
+        "uclusters":  1,
+        "uiv":  2
+    },
+    {
+        "ab_testing":  false,
+        "appType":  1,
+        "curr":  "rub",
+        "dest":  12358373,
+        "page":  1,
+        "query":  "стол компьютерный",
+        "resultset":  "catalog",
+        "sort":  "popular",
+        "spp":  30,
+        "suppressSpellcheck":  false,
+        "uclusters":  1,
+        "uiv":  2
+    }
+]

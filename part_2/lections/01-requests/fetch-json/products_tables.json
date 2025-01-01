@@ -1,0 +1,361 @@
+[
+    {
+        "brand": "SANYAK",
+        "colors": [
+            {
+                "name": "красный"
+            },
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Стол компьютерный игровой",
+        "priceU": 650000,
+        "salePriceU": 429700,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 610,
+        "rating": 5
+    },
+    {
+        "brand": "SANVUT",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный белый",
+        "priceU": 288500,
+        "salePriceU": 127100,
+        "volume": 199,
+        "rating": 5
+    },
+    {
+        "brand": "myXplace",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "стол компьютерный геймерский письменный",
+        "priceU": 1240000,
+        "salePriceU": 508800,
+        "volume": 711,
+        "rating": 5
+    },
+    {
+        "brand": "LETTA",
+        "colors": [
+            {
+                "name": "красный"
+            },
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Cтол компьютерный игровой",
+        "priceU": 799900,
+        "salePriceU": 243100,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 536,
+        "rating": 5
+    },
+    {
+        "brand": "SANVUT",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Стол письменный темно серый",
+        "priceU": 288500,
+        "salePriceU": 129300,
+        "volume": 239,
+        "rating": 5
+    },
+    {
+        "brand": "",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный компьютерный угловой",
+        "priceU": 519900,
+        "salePriceU": 248900,
+        "volume": 627,
+        "rating": 5
+    },
+    {
+        "brand": "RUBYKZ",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный, компьютерный для работы",
+        "priceU": 500000,
+        "salePriceU": 201400,
+        "volume": 475,
+        "rating": 5
+    },
+    {
+        "brand": "LarinLoft",
+        "colors": [
+            {
+                "name": "серый"
+            }
+        ],
+        "name": "Стол письменный компьютерный лофт 110х55х75 см",
+        "priceU": 873500,
+        "salePriceU": 298700,
+        "volume": 702,
+        "rating": 5
+    },
+    {
+        "brand": "LETTA",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Cтол письменный",
+        "priceU": 356400,
+        "salePriceU": 127300,
+        "volume": 240,
+        "rating": 5
+    },
+    {
+        "brand": "Стендмебель",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный угловой Вегас СТМ компьютерный для школьника",
+        "priceU": 646500,
+        "salePriceU": 284900,
+        "volume": 671,
+        "rating": 5
+    },
+    {
+        "brand": "LarinLoft",
+        "colors": [
+            {
+                "name": "серый"
+            }
+        ],
+        "name": "Стол письменный кухонный лофт 95х75х55 см",
+        "priceU": 797500,
+        "salePriceU": 272700,
+        "volume": 726,
+        "rating": 5
+    },
+    {
+        "brand": "LarinLoft",
+        "colors": [
+            {
+                "name": "коричневый"
+            }
+        ],
+        "name": "Стол письменный компьютерный лофт 110х55х75 см",
+        "priceU": 890000,
+        "salePriceU": 263700,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 715,
+        "rating": 5
+    },
+    {
+        "brand": "Ricoo",
+        "colors": [
+            {
+                "name": "коричневый"
+            },
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный с ящиками компьютерный угловой для книг",
+        "priceU": 1059200,
+        "salePriceU": 499000,
+        "promoTextCard": "ЭКСКЛЮЗИВ WB",
+        "volume": 864,
+        "rating": 5
+    },
+    {
+        "brand": "Siventsov",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол школьный письменный с полками и ящиками",
+        "priceU": 1030600,
+        "salePriceU": 274100,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 575,
+        "rating": 5
+    },
+    {
+        "brand": "PROGamer",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Стол игровой компьютерный геймерский для пк Sky черный",
+        "priceU": 1280000,
+        "salePriceU": 408500,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 684,
+        "rating": 5
+    },
+    {
+        "brand": "GARUN",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный компьютерный с полками 239",
+        "priceU": 420000,
+        "salePriceU": 220200,
+        "volume": 452,
+        "rating": 5
+    },
+    {
+        "brand": "Олмеко",
+        "colors": [
+            {
+                "name": "коричневый"
+            }
+        ],
+        "name": "Стол компьютерный письменный с полками",
+        "priceU": 623400,
+        "salePriceU": 293700,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 487,
+        "rating": 5
+    },
+    {
+        "brand": "Фабрика корпусной мебели ИЗИ",
+        "colors": [
+            {
+                "name": "коричневый"
+            },
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Игровой геймерский стол для компьютера",
+        "priceU": 800000,
+        "salePriceU": 504600,
+        "volume": 772,
+        "rating": 5
+    },
+    {
+        "brand": "GARUN",
+        "colors": [
+            {
+                "name": "коричневый"
+            }
+        ],
+        "name": "Стол письменный компьютерный с полками 239",
+        "priceU": 420000,
+        "salePriceU": 220200,
+        "volume": 452,
+        "rating": 5
+    },
+    {
+        "brand": "LETTA",
+        "colors": [
+            {
+                "name": "белый"
+            },
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Cтол письменный",
+        "priceU": 815000,
+        "salePriceU": 247700,
+        "volume": 536,
+        "rating": 5
+    },
+    {
+        "brand": "LETTA",
+        "colors": [
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Стол письменный",
+        "priceU": 785500,
+        "salePriceU": 250700,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 466,
+        "rating": 5
+    },
+    {
+        "brand": "",
+        "colors": [
+            {
+                "name": "белый"
+            }
+        ],
+        "name": "Стол письменный компьютерный с полками для школьников",
+        "priceU": 630500,
+        "salePriceU": 220400,
+        "volume": 638,
+        "rating": 5
+    },
+    {
+        "brand": "LETTA",
+        "colors": [
+            {
+                "name": "коричневый"
+            },
+            {
+                "name": "бежевый"
+            }
+        ],
+        "name": "Cтол письменный компьютерный с ящиками",
+        "priceU": 875900,
+        "salePriceU": 286200,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 658,
+        "rating": 5
+    },
+    {
+        "brand": "PROGamer",
+        "colors": [
+            {
+                "name": "красный"
+            },
+            {
+                "name": "черный"
+            }
+        ],
+        "name": "Стол игровой компьютерный геймерский для пк Sky черн красный",
+        "priceU": 1280000,
+        "salePriceU": 408500,
+        "promoTextCard": "ХИТ - ПАРАД",
+        "volume": 654,
+        "rating": 5
+    },
+    {
+        "brand": "TRINITY",
+        "colors": [
+            {
+                "name": "серый"
+            },
+            {
+                "name": "коричневый"
+            }
+        ],
+        "name": "Стол письменный компьютерный для двоих с полками",
+        "priceU": 1332500,
+        "salePriceU": 475900,
+        "volume": 825,
+        "rating": 5
+    }
+]
