@@ -67,6 +67,7 @@ JS - язык:
 
 ## links && utils  
 
+> [визуализатор JS - Call Stack, Task Queue](https://www.jsv9000.app/)  
 > [moment - библиотека для работы со временем](https://momentjs.com/)  
 > [lodash - функциональная библиотека](https://lodash.com/)  
 > [ramda - функциональная библиотека](https://ramdajs.com/)  
