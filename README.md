@@ -60,6 +60,7 @@ JS - язык:
 > [docs-lodash.com](https://docs-lodash.com/v4/)  
 > [unicode](https://compart.com/en/unicode/block/U+0400)  
 > [html-symbols](https://compart.com/en/unicode/html)  
+> [Неидеальность JSON](https://habr.com/ru/articles/871616/)  
 
 ## install  
 
