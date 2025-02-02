@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "cli-table": "^0.3.11"
+    "cli-table": "^0.3.11",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
   }
 }
