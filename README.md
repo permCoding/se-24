@@ -177,6 +177,8 @@ npm install nodemon -g
 nodemon index.js
 ```
 
+---  
+
 ```
 автоподключение mongoDB  
 https://www.npmjs.com/package/express-mongo-db
@@ -193,6 +195,8 @@ app.get('/', function (req, res, next) {
 });
 ```
 
+---  
+
 ```txt
 комменты в review кода  
 Praise - похвала
@@ -202,3 +206,22 @@ Question - вопрос
 Suggestion - предложение
 Non-blocking - неблокирующие
 ```
+
+---  
+
+```txt
+install node.js:
+
+sudo apt install curl
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+Close and reopen your terminal to start using nvm
+
+nvm install 22
+
+node -v
+nvm current
+npm -v
+```
+
