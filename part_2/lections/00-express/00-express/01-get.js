@@ -5,7 +5,8 @@ const express = require('express'),
     callbackGet = () => { log('callbackGet') },
     callbackListen = () => { log('callbackListen') }
 
-app.get(['/','/index'], callbackGet);
 app.get('/start', callbackGet);
+
+app.get(['/','/index'], callbackGet);
 
 app.listen(PORT, callbackListen);

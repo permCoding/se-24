@@ -31,7 +31,7 @@ app.post('/abiturs', (req, res) => {
     res.status(201).end();
 }); // http://localhost:3000/abiturs
 
-app.post('/abitursNew', (req, res) => { 
+app.post('/abitursNew', (req, res) => { // без сохранения
     abiturs.push(req.body); // объект от клиента
     res.json(abiturs);
 }); // http://localhost:3000/abitursNew

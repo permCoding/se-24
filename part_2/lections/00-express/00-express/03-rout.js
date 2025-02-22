@@ -1,8 +1,13 @@
-const express = require('express'),
-    app = express(),
-    HOST = 'localhost'
-    PORT = 3000,
-    log = console.log
+const express = require('express');
+const { HOST, PORT } = require('./config.json');
+const log = console.log;
+
+const app = express();
+
+app.use((req, res, next) => {
+    log(req.url.split('/'));
+    next();
+}); // middleware
 
 app.get('/', (req, res) => {
     res.send('/===============')
@@ -19,19 +24,21 @@ app.get('/html', (req, res) => {
     let html = '- 111<br>- 222<br>- 333<br>- 444<br>';
     res.send(html);
 });
-// - - - - - показать как убивать процессы - - - - - 
+
 app.get('/json', (req, res) => {
-    log(req.url.split('/'))
     res.set('Content-Type', 'text/plain');
     let obj = { id: 101, user: 'solver' };
     res.send(JSON.stringify(obj, null, 4));
 });
 
 app.get('/json/:num', (req, res) => { // /json/202
-    log(req.url.split('/'));
-    let obj = { id: 202, user: 'answer' };
+    let arr = [ 
+        { id: 102, user: 'answer-102' }, 
+        { id: 302, user: 'answer-302' }
+    ];
+    let obj = arr.find(x => x.id == req.params.num);
     res.json(obj);
-});
+}); // как быть, есть номер НЕ найден ?
 
 const getHtml = (msg) => {
     return `
