@@ -34,9 +34,7 @@ app.get('/abiturs/limit/:count', (req, res) => {
  * http://localhost:3000/abiturs/limit/3/0
  */
 app.get('/abiturs/limit/:count/:gender', (req, res) => {
-    let params = req.params; 
-    log(params);
-    let { count, gender } = params;
+    let { count, gender } = req.params;
     let filtered = require('./json/abiturs.json')
         .filter(x => x.gender == gender);
     res.json(filtered.slice(0, count));

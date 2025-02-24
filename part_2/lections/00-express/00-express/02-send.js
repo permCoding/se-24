@@ -18,7 +18,9 @@ const getCurTime = () => {
 
 const callbackGet = (req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    res.write(`${'<h3>'}${getCurTime()}${'</h3>'}`);
+    let arrCurTime = getCurTime().split(' ');
+    res.write(`<h3>${arrCurTime[0]}</h3> <br>`);
+    res.write(`<h5>${arrCurTime[1]}</h5>`);
     res.send();
 };
 

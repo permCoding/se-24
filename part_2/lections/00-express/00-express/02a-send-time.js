@@ -20,14 +20,15 @@ const writeCurTime = () => {
 
 const callbackGet = (req, res) => {
     res.setHeader('Content-Type', 'text/html; charset=utf8');
+    
     res.write('<font face="Courier New" size=2>')
     fs
         .readFileSync(filePath, 'utf8')
         .split('\n')
         .forEach(line => res.write(`${line}<br>`));
     res.write(`${'= '.repeat(9)}`);
-    
-    res.write('</font>')
+    res.write('</font>');
+
     res.send();
 };
 

@@ -6,15 +6,19 @@ const express = require('express'),
 
 app.get('/', (req, res) => { res.send('/ = = = = = ') });
 
+/**
+ * http://localhost:3000/abiturs/query?city=Оса&gender=1
+ */
 app.get('/abiturs/query', (req, res) => {
-    let params = req.params; log(params); // это которые через /:param1/:param2
-    let query = req.query; log(query); // это которые словарь ?field1=val1&field2=val2
-    // let { city } = query;
-    let city = query.city;
-    let abiturs = require('./json/abiturs.json');
-    res.json(abiturs.filter(x => x.city === city));
+    // let params = req.params; log(params); // это которые через /:param1/:param2
+    // let query = req.query; log(query); // это которые словарь ?field1=val1&field2=val2
+    res.json(
+        require('./json/abiturs.json')
+            .filter(x => (x.city === req.query.city) && (x.gender === req.query.gender))
+            .slice(0, 2)
+        );
     // res.send(JSON.stringify(abiturs.filter(x => x.city === city), null, 4));
-}); // http://localhost:3000/abiturs/query?city=Оса&gender=1
+});
 
 /**
  * http://[::1]:3000/abiturs - это для Thunder Client
