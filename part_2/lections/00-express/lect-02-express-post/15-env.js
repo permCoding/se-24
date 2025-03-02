@@ -1,14 +1,18 @@
+require('dotenv').config(); // npm install dotenv
+
 const express = require('express'); // npm i express
 const decache = require('decache'); // для отмены кэширования json
-const { writeFileSync } = require('fs'); // sync
-const { HOST, PORT } = require('./config.json').hosting;
-const { dirJSON, fileName } = require('./config.json');
+const fs = require('fs'); // sync
+
+const HOST = process.env.HOST || localhost;
+const PORT = process.env.PORT || 3000;
+const dirJSON = process.env.dirJSON;
+const fileName = process.env.fileName;
 const filename = `${dirJSON}${fileName}`; // адрес локального хранилища
+
 const log = console.log;
-// const { log } = require("console"); // https://nodejs.org/api/console.html
 
 let abiturs = null; // для хранения массива данных
-// let index = null; // можно и через глобальную переменную
 
 const app = express();
 
@@ -20,12 +24,6 @@ app.use((req, res, next) => { // middleware
     next();
 });
 
-/**
- * проверяем тип запроса, наличие и корректность параметра
- * добавляем в req индекс объекта
- * @param {*} req 
- * @returns boolean
- */
 const checkId = (req, res) => {
     const methods = ['PUT', 'PATCH', 'DELETE'];
     log(req.method, req.params);
@@ -52,7 +50,7 @@ const checkId = (req, res) => {
 app.post('/abiturs/', (req, res) => {
     let id = +abiturs.at(-1).id + 1;
     abiturs.push( { id, ...req.body } ); // добавляемый объект берём из body
-    writeFileSync(filename, JSON.stringify(abiturs, null, 4), 'utf8');
+    fs.writeFileSync(filename, JSON.stringify(abiturs, null, 4), 'utf8');
     res.json(abiturs);
 }); 
 
@@ -61,50 +59,52 @@ app.put('/abiturs/:id', (req, res) => {
         // abiturs[req.index] = req.body; // так без id
         let id = +req.params.id;
         abiturs[req.index] = { id, ...req.body }; // так с id
+        let jsonStr = JSON.stringify(abiturs, null, 4);
+        fs.writeFileSync(filename, jsonStr, 'utf8');
         res.status(200).json(abiturs);
     } else {
         res.status(404).end();
     }
-}); // http://[::1]:3000/abiturs/20
+}); // http://localhost:3000/abiturs/20
 
 app.patch('/abiturs/:id', (req, res) => { 
     if (checkId(req, res)) { 
         abiturs[req.index] = { ...abiturs[req.index], ...req.body }; // ver1
         // abiturs[req.index] = Object.assign(abiturs[req.index], req.body) // ver2
         // ver3 циклом по переданным полям
+        let jsonStr = JSON.stringify(abiturs, null, 4);
+        fs.writeFileSync(filename, jsonStr, 'utf8');
         res.status(200).json(abiturs);
     } else {
         res.status(404).end();
     }
-}); // http://[::1]:3000/abiturs/20
+}); // http://localhost:3000/abiturs/20
 
 app.delete('/abiturs/:id', (req, res) => { 
     if (checkId(req, res)) { 
         abiturs.splice(req.index, 1);
         let jsonStr = JSON.stringify(abiturs, null, 4);
-        writeFileSync(filename, jsonStr, 'utf8');
+        fs.writeFileSync(filename, jsonStr, 'utf8');
         res.status(200).json(abiturs);
     } else {
         res.status(404).end();
     }
-}); // http://[::1]:3000/abiturs/20
+}); // http://localhost:3000/abiturs/20
 
 app.get(['/abiturs','/'], (req, res) => res.json(abiturs) );
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
 /*
-так как нет GUI, то тестировать в Thunder Client или PostMan
-  POST  - создать новую запись, объект, ресурс
-  PUT   - перезаписать существующий объект, не указанные поля потеряются
-  PATCH - перезаписать поля существующего объекта, не указанные поля сохранятся старыми
+    для работы этой проги нужен файл .env:
+# параметры для настройки приложения
+appName=Express
+dirJSON=./json/
+fileName=abiturs.json
+HOST=localhost
+PORT=3000
 
-200 - запрос был успешным и сервер возвращает актуальное представление ресурса
-204 - запрос был успешным, но нет содержимого для возвращения
-часто используется в ответ на запрос DELETE
-когда ресурс был успешно удален и нет необходимости возвращать данные
-
-объект для тестирования:
+    объекты для тестирования:
 {
     "lastName": "Кумова",
     "rating": "204",
@@ -113,11 +113,5 @@ app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
     "city": "Лысьва"
 }
 
-PUT работает как присваивание к существующей переменной, 
-то есть нужно обновлять все поля существующего объекта
-кто не обновился, тот потерялся
-
-PATCH (заплатка) - обновит указанное поле, не теряя уже существующие поля
-обновим существующий объект по id == 20 и запишем туда объект: 
 { "rating": "222" }
 */

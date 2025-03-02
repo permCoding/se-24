@@ -150,21 +150,5 @@
         "gender": "1",
         "birthDate": "2002-07-24",
         "city": "Пермь"
-    },
-    {
-        "id": 20,
-        "lastName": "Кумова",
-        "rating": "204",
-        "gender": "0",
-        "birthDate": "2002-05-13",
-        "city": "Лысьва"
-    },
-    {
-        "id": 21,
-        "lastName": "Кумова",
-        "rating": "204",
-        "gender": "0",
-        "birthDate": "2002-05-13",
-        "city": "Лысьва"
     }
 ]

@@ -2,6 +2,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "decache": "^4.6.2",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-validator": "^7.0.1",
     "request": "^2.88.2",

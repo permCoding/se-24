@@ -16,10 +16,8 @@ const app = express();
  */
 app.disable('x-powered-by'); // отключить заголовки ответа
 
-/** 
- * функция для добавления новой записи и
- * логгирования действий пользователя в консоли и в файле
-*/
+
+// логгирование действий пользователя
 const logging = (req, res, next) => {
     // let fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
     // let url = req.url; // включает и query - если есть
