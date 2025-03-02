@@ -1,0 +1,9 @@
+{
+    "appName": "Express",
+    "dirJSON": "./json/",
+    "fileName": "abiturs.json",
+    "hosting": {
+        "HOST": "localhost",
+        "PORT": 3000
+    }
+}

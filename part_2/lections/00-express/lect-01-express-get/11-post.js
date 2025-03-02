@@ -6,8 +6,13 @@ const express = require('express'), // npm i express
     abiturs = null, // для хранения массива данных
     { writeFileSync, writeFile } = require('fs'), // для записи в json
     decache = require('decache'), // для отмены кэширования json
-    filename = './json/abiturs.json';
+    filename = './json/abiturs.json'; // адрес локального хранилища
 
+/**
+ * минимизация возвращаемых данных
+ * сокрытие технологий реализации
+ * снижение рисков взлома
+ */
 // app.disable('x-powered-by'); // отключить заголовки ответа
 
 app.use((req, res, next) => { // middleware
@@ -18,8 +23,6 @@ app.use((req, res, next) => { // middleware
 });
 
 app.use(express.json()); // middleware для распознавания объектов
-
-app.get('/', (req, res) => res.send('/ = = = = ') );
 
 app.get('/abiturs', (req, res) => res.json(abiturs) );
 
@@ -49,6 +52,8 @@ app.post('/abitursSave', (req, res) => {
     writeFile(filename, jsonStr, 'utf8', () => res.json(abiturs)); 
     // http://localhost:3000/abitursSave
 });
+
+app.get('/', (req, res) => res.send('\root or error') );
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
