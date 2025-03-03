@@ -4,7 +4,7 @@ const express = require('express'); // npm i express
 const decache = require('decache'); // для отмены кэширования json
 const fs = require('fs'); // sync
 
-const HOST = process.env.HOST || localhost;
+const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const dirJSON = process.env.dirJSON;
 const fileName = process.env.fileName;
