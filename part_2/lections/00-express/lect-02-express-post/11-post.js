@@ -1,5 +1,4 @@
 const express = require('express'); // npm i express
-const { writeFileSync, writeFile } = require('fs'); // для записи в json
 const { HOST, PORT } = require('./config.json').hosting;
 const { dirJSON, fileName } = require('./config.json');
 const filename = `${dirJSON}${fileName}`; // адрес локального хранилища
@@ -9,12 +8,12 @@ let abiturs = null; // для хранения массива данных
 
 const app = express();
 
+app.use(express.json()); // middleware для распознавания объектов
+
 app.use((req, res, next) => { // middleware
     abiturs = require(filename); // в JS регистр имеет значение
     next();
 });
-
-app.use(express.json()); // middleware для распознавания объектов
 
 app.get('/abiturs', (req, res) => res.json(abiturs) );
 
@@ -32,7 +31,7 @@ app.post('/abitursPush', (req, res) => { // без сохранения
     // но пока без сохранения в файл
 }); // http://localhost:3000/abitursPush
 
-app.get('/', (req, res) => res.send('\root or error') );
+app.get('/', (req, res) => res.send('root or error') );
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 

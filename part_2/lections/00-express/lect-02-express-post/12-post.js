@@ -18,25 +18,25 @@ app.use((req, res, next) => { // middleware
 
 app.use(express.json()); // middleware для распознавания объектов
 
-app.get('/abiturs', (req, res) => res.json(abiturs) );
-
-// http://localhost:3000/abitursSaveSync
-// http://127.0.0.1:3000/abitursSaveSync
-// http://[::1]:3000/abitursSaveSync
-app.post('/abitursSaveSync', (req, res) => { 
+// http://localhost:3000/abitursSync
+// http://127.0.0.1:3000/abitursSync
+// http://[::1]:3000/abitursSync
+app.post('/abitursSync', (req, res) => { 
     abiturs.push(req.body); // объект от клиента
     let strJSON = JSON.stringify(abiturs, null, 4);
     writeFileSync(filename, strJSON, {encoding: 'utf8'});
     res.json(abiturs);
 });
 
-app.post('/abitursSave', (req, res) => { 
+app.post('/abiturs', (req, res) => { 
     abiturs.push(req.body);
     let jsonStr = JSON.stringify(abiturs, null, 4);
     writeFile(filename, jsonStr, 'utf8', () => res.json(abiturs));
-}); // http://localhost:3000/abitursSave
+}); // http://localhost:3000/abiturs
 
-app.get('/', (req, res) => res.send('\root or error') );
+app.get('/abiturs', (req, res) => res.json(abiturs) );
+
+app.get('/', (req, res) => res.send('root or error') );
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 

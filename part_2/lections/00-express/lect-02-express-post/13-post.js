@@ -60,7 +60,7 @@ app.post('/abitursPush', logging, (req, res) => { // без сохранения
     );
 });
 
-app.get('/', (req, res) => res.send('\root or error') );
+app.get('/', (req, res) => res.send('root or error') );
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 

@@ -1,5 +1,5 @@
 const express = require('express');
-const { HOST, PORT } = require('./config.json').hosting;
+const { HOST, PORT } = require('./config.json');
 const log = console.log;
 const app = express();
 
@@ -11,42 +11,34 @@ const app = express();
  * можно увидеть код 304 - запрашиваемый ресурс не был изменен 
  * с момента последнего запроса, и клиент использует кэшированную версию ресурса
  */
-// app.use((req, res, next) => {
-//     res.set('Cache-Control', 'no-store');
-//     next();
-// }); // middleware
+app.use((req, res, next) => {
+    res.set('Cache-Control', 'no-store');
+    next();
+}); // middleware
 
 
 // версия 1
-// app.get('*', (req, res) => {
-//     res.send('Это корневой маршрут');
-// });
+app.get('*', (req, res) => {
+    res.send('Это корневой маршрут');
+});
 
-// app.get('/users', (req, res) => { // сюда НЕ дойдёт
-//     res.send('Это список пользователей');
-// });
+app.get('/users', (req, res) => { // сюда НЕ дойдёт
+    res.send('Это список пользователей');
+});
 
 
 // версия 2
-app.get('/users/:id', (req, res) => { // сначала более специфичные маршруты
-    res.status(200).send(`пользователь - ${+req.params.id+1}`);
-});
+// app.get('/users', (req, res) => { // сначала более специфичные маршруты
+//     res.status(200).send('Список пользователей');
+// });
 
-app.get('/users', (req, res) => { // сначала более специфичные маршруты
-    res.status(200).send('Список пользователей');
-});
+// app.get('/products', (req, res) => { // сначала более специфичные маршруты
+//     res.status(200).send('Список продуктов');
+// });
 
-app.get('/products', (req, res) => { // сначала более специфичные маршруты
-    res.status(200).send('Список продуктов');
-});
-
-app.get('/', (req, res) => { // в конце корневой маршрут 
-    res.status(200).send('/root');
-}); // или маршрут по умолчанию - для всех несуществующих путей
-
-app.get('*', (req, res) => { // в конце корневой маршрут 
-    res.status(404).send('Страница не найдена');
-}); // или маршрут по умолчанию - для всех несуществующих путей
+// app.get('*', (req, res) => { // в конце корневой маршрут 
+//     res.status(404).send('Страница не найдена');
+// }); // или маршрут по умолчанию - для всех несуществующих путей
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
