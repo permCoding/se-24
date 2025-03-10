@@ -38,6 +38,7 @@ Middleware
 
 ---  
 
+```txt
 my-express-app/
 │
 ├── node_modules/          # установленные зависимости
@@ -60,6 +61,7 @@ my-express-app/
 ├── .gitignore             # содержит файлы и папки, игнорируемые Git
 ├── package.json           # описание проекта и зависимости
 └── README.md              # документация проекта
+```
 
 ---  
 
