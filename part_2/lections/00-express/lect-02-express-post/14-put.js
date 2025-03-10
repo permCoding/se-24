@@ -51,6 +51,12 @@ const checkId = (req, res) => {
 // http://[::1]:3000/abiturs
 app.post('/abiturs/', (req, res) => {
     let id = +abiturs.at(-1).id + 1;
+    let obj_old = abiturs.at(-1);
+    // let obj_new = { 
+    //     "id": id,
+    //     "rating": obj_old.rating,
+    //     ...
+    // };
     abiturs.push( { id, ...req.body } ); // добавляемый объект берём из body
     writeFileSync(filename, JSON.stringify(abiturs, null, 4), 'utf8');
     res.json(abiturs);

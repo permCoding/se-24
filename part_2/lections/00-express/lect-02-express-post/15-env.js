@@ -5,7 +5,7 @@ const decache = require('decache'); // для отмены кэшировани�
 const fs = require('fs'); // sync
 
 const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 3000; // оператор нулевого слияния 
 const dirJSON = process.env.dirJSON;
 const fileName = process.env.fileName;
 const filename = `${dirJSON}${fileName}`; // адрес локального хранилища
