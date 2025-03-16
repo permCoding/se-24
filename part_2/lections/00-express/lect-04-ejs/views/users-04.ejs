@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/css/favicon.ico" />
+</head>
+
+<body>
+
+    <div>
+        <h3>Абитуриенты</h3>
+
+        <% arrayUsers.forEach( user => { %>
+            <% listClass = (+user.rating > 190)? 'list-green': 'list-red' %>
+            <li class="<%= listClass %>">
+            <%= user.lastName %> 
+            <%= user.firstName %> 
+            <%= user.rating %>
+            </li>
+        <% }); %>
+    
+    </div>
+
+    <div>
+        <h3>Сортировать:</h3>
+        <a href="http://localhost:3000/up">
+            <button class="green">по возрастанию</button>
+        </a>
+        <a href="http://localhost:3000/down">
+            <button class="green">по убыванию</button>
+        </a>
+    </div>
+
+</body>
+</html>

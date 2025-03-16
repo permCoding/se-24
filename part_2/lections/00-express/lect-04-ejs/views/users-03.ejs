@@ -12,8 +12,13 @@
     <div>
         <h3>Абитуриенты</h3>
 
-        <p><%= lastName %> <%= firstName %></p>
-        <strong><p><%= rating %></p></strong>
+        <% arrayUsers.forEach( user => { %>
+            <li>
+            <%= user.lastName %> 
+            <%= user.firstName %> 
+            <%= user.rating %>
+            </li>
+        <% }); %>
     
     </div>
 
