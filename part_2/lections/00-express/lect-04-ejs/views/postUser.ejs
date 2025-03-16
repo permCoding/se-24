@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Abiturs</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+
+    
+    <div>
+        <h3>Добавить абитуриента</h3>
+
+        <form>
+            <input class="value"
+                type="text" 
+                name="lastName" 
+                minlength="1" maxlength="255" size="32" required
+                placeholder="Фамилия" /> <br>
+
+            <input class="value"
+                type="text" 
+                name="firstName" 
+                minlength="1" maxlength="255" size="32" required
+                placeholder="Имя" /> <br>
+
+            <input class="value" 
+                type="number" 
+                name="rating" 
+                placeholder="Рейтинг"
+                value="0" /> <br>
+
+            <br><br>
+
+            <button class="green"
+                formaction="/postUser" 
+                formmethod="post" 
+                type="submit">
+                Добавить
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
