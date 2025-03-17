@@ -10,13 +10,16 @@
 <body>
 
     <div>
-        <h3>Абитуриенты</h3>
-
+        <h3> <%= title %> </h3>
+        <!-- 
+            заменить forEach на цикл for
+            по индексам массива arrrayUsers
+        -->
         <% arrayUsers.forEach( user => { %>
             <li>
-            <%= user.lastName %> 
-            <%= user.firstName %> 
-            <%= user.rating %>
+                <%= user.lastName %> 
+                <%= user.firstName %> 
+                <%= user.rating %>
             </li>
         <% }); %>
     

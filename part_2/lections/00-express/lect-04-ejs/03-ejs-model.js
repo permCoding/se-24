@@ -11,6 +11,7 @@ app.use('/css', express.static('css'));
 app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html; charset=utf-8');
     let model = { 
+        "title": 'Абитуриенты',
         "arrayUsers": users.sort((a, b) => a.rating > b.rating? +1: -1) 
     };
     res.render('users-03', model);

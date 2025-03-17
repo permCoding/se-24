@@ -11,13 +11,13 @@
 
     <div>
         <h3>Абитуриенты</h3>
-
+        
         <% arrayUsers.forEach( user => { %>
-            <% listClass = (+user.rating > 190)? 'list-green': 'list-red' %>
+            <% let listClass = (+user.rating > 190)? 'list-green': 'list-red'; %>
             <li class="<%= listClass %>">
-            <%= user.lastName %> 
-            <%= user.firstName %> 
-            <%= user.rating %>
+                <%= user.lastName %> 
+                <%= user.firstName %> 
+                <%= user.rating %>
             </li>
         <% }); %>
     
