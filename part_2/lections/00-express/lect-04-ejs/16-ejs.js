@@ -5,16 +5,13 @@ const fs = require('fs');
 const { HOST, PORT } = require('./config.json').hosting;
 const filename = './json/users.csv'; // адрес локального хранилища
 
-const log = console.log;
-
-let abiturs = null; // для хранения массива данных
-
 const app = express();
 app.use(express.json()); // читать объекты в POST
 
-app.post('/postUser', (req, res) => {
-    let { firstName, lastName, rating } = req.body;
-    fs.appendFileSync(filename, `${firstName},${lastName},${rating}\n`, 'utf8');
+app.post('/postUser', (req, res) => { // добавить в csv-файл новую запись
+    let { firstName, lastName, rating } = req.body;  // данные берутся из объекта body
+    // fs.appendFileSync(filename, `${firstName},${lastName},${rating}\n`, 'utf8');
+    fs.appendFileSync(filename, `${[firstName,lastName,rating].join(',')}\n`, 'utf8');
     res.send(`добавили запись`);
 });
 
@@ -36,7 +33,7 @@ app.get(['/getUsers','/'], (req, res) => {
     }
 });
 
-app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
+app.listen(PORT, HOST, () => console.log(`http://${HOST}:${PORT}/`));
 
 /*
 - тут проверка только через Thunder Client
