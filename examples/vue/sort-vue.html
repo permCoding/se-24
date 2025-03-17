@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js Example</title>
+  <script src="https://unpkg.com/vue@next"></script>  <!-- Vue 3 -->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>  Vue 2 -->
+</head>
+<body>
+  <div id="app">
+    <!-- Ваш Vue.js контент здесь -->
+	<template>
+	  <div>
+		<button @click="sortBy = 'name'">Сортировать по имени</button>
+		<button @click="sortBy = 'age'">Сортировать по возрасту</button>
+		<button @click="sortDirection *= -1">
+		  {{ sortDirection === 1 ? 'По возрастанию' : 'По убыванию' }}
+		</button>
+
+		<ul>
+		  <li v-for="item in sortedItems" :key="item.id">
+			{{ item.name }} - {{ item.age }}
+		  </li>
+		</ul>
+	  </div>
+	</template>
+  </div>
+
+  <script>
+    // Ваш Vue.js код здесь
+	export default {
+	  data() {
+		return {
+		  items: [
+			{ id: 1, name: 'Bob', age: 25 },
+			{ id: 2, name: 'Alice', age: 30 },
+			{ id: 3, name: 'Charlie', age: 20 },
+		  ],
+		  sortBy: 'name', // По умолчанию сортируем по имени
+		  sortDirection: 1, // 1 - по возрастанию, -1 - по убыванию
+		};
+	  },
+	  computed: {
+		sortedItems() {
+		  const sortKey = this.sortBy;
+		  const direction = this.sortDirection;
+
+		  return [...this.items].sort((a, b) => {
+			const valueA = a[sortKey];
+			const valueB = b[sortKey];
+
+			if (valueA < valueB) {
+			  return -1 * direction;
+			}
+			if (valueA > valueB) {
+			  return 1 * direction;
+			}
+			return 0;
+		  });
+		},
+	  },
+	};
+  </script>
+</body>
+</html>
