@@ -18,34 +18,38 @@ app.post('/postUser', (req, res) => {
     res.send(`добавили запись`);
 });
 
-app.get(['/getUsers','/'], (req, res) => 
-    {
-        const opts = {
-            skipHeader: false,
-            // headerKeys: ['column1', 'column2'],
-            returnObject: true,
-            delimiter: ',',
-            trim: true
-        };
-        try {
-            const csvData = fs.readFileSync(filename, 'utf8');
-            const jsonArray = csv.parse(csvData, opts);
-            res.json(jsonArray);
-        } catch (error) {
-            console.error('Error:', error);
-            res.status(500).send('Internal Server Error');
-        }
+app.get(['/getUsers','/'], (req, res) => {
+    const opts = {
+        skipHeader: false,
+        // headerKeys: ['column1', 'column2'],
+        returnObject: true,
+        delimiter: ',',
+        trim: true
+    };
+    try {
+        const csvData = fs.readFileSync(filename, 'utf8');
+        const jsonArray = csv.parse(csvData, opts);
+        res.json(jsonArray);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Internal Server Error');
     }
-
-);
+});
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
 /*
+- тут проверка только через Thunder Client
+- без web-форм и get и post
+
 - объект для тестирования:
     {
         "firstName": "Ирина",
         "lastName": "Кумова",
         "rating": "204"
     }
+
+ЗАДАНИЕ:
+- доделать html-форму для отображения таблицы с записями
+- по примерам 01-04
 */

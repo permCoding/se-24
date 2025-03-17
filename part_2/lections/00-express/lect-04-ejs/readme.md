@@ -1,6 +1,7 @@
 # Шаблонизатор ejs  
 
 > установка: `npm install ejs`  
+> [ejs docs](https://ejs.co/#docs)  
 
 ---  
 

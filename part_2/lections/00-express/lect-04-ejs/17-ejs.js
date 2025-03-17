@@ -25,30 +25,27 @@ app.get('/postUser', (req, res) => {
     res.render('postUser', { });
 });
 
-app.get(['/getUsers','/'], (req, res) => 
-    {
-        const opts = {
-            skipHeader: false,
-            // headerKeys: ['column1', 'column2'],
-            returnObject: true,
-            delimiter: ',',
-            trim: true
-        };
-        try {
-            const csvData = fs.readFileSync(filename, 'utf8');
-            const jsonArray = csv.parse(csvData, opts);
-            res.json(jsonArray);
-        } catch (error) {
-            console.error('Error:', error);
-            res.status(500).send('Internal Server Error');
-        }
+app.get(['/getUsers','/'], (req, res) => {
+    const opts = {
+        skipHeader: false,
+        // headerKeys: ['column1', 'column2'],
+        returnObject: true,
+        delimiter: ',',
+        trim: true
+    };
+    try {
+        const csvData = fs.readFileSync(filename, 'utf8');
+        const jsonArray = csv.parse(csvData, opts);
+        res.json(jsonArray);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Internal Server Error');
     }
-
-);
+});
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
-// задание: добавить поле gender, обрабоать с radioButton
+// задание: добавить поле gender, обработать с radioButton
 
 /*
 - объект для тестирования:
