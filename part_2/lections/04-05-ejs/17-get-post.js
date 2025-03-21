@@ -16,8 +16,13 @@ app.use(express.urlencoded({ extended: true })); // объекты с ejs-шаб
 app.post('/postUser', (req, res) => {
     let { firstName, lastName, rating } = req.body;
     fs.appendFileSync(filename, `${firstName},${lastName},${rating}\n`, 'utf8');
-    res.send({ firstName, lastName, rating }); // для контроля
-    // res.render('getUsers', { }); // доделать самостоятельно - вывод всех пользователей в таблицу на web-форме
+    
+    // - 01 -
+    // res.send({ firstName, lastName, rating }); // для контроля
+    // - 02 -
+    res.redirect('/');
+    // - 03 - доделать самостоятельно - вывод всех пользователей в таблицу на web-форме
+    // res.render('getUsers', { });
 });
 
 app.get('/postUser', (req, res) => {
