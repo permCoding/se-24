@@ -7,8 +7,6 @@ const filename = './json/users.csv'; // адрес локального хран
 
 const log = console.log;
 
-let abiturs = null; // для хранения массива данных
-
 const app = express();
 app.set('view engine', 'ejs'); // шаблонизатор - npm i ejs
 app.use('/css', express.static('css')); // путь к статичным файлам
@@ -23,7 +21,7 @@ app.post('/postUser', (req, res) => {
 });
 
 app.get('/postUser', (req, res) => {
-    res.render('postUser', { });
+    res.render('postUser.ejs', { });
 });
 
 app.get(['/getUsers','/'], (req, res) => {
@@ -37,7 +35,7 @@ app.get(['/getUsers','/'], (req, res) => {
     try {
         const csvData = fs.readFileSync(filename, 'utf8');
         const jsonArray = csv.parse(csvData, opts);
-        res.json(jsonArray);
+        res.json(jsonArray); // доделать самостоятельно - вывод всех пользователей в таблицу на web-форме
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Internal Server Error');
@@ -46,7 +44,8 @@ app.get(['/getUsers','/'], (req, res) => {
 
 app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
 
-// задание: добавить поле gender, обработать с radioButton
+// задание: добавить поле gender, обработать с помощью radioButton - один из многих
+// задание: добавить поле arrayDirects, обработать с помощью checkBox - многие из многих
 
 /*
 - объект для тестирования:
@@ -55,4 +54,18 @@ app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
         "lastName": "Кумова",
         "rating": "204"
     }
+- после доработки
+    {
+        "firstName": "Ирина",
+        "lastName": "Кумова",
+        "rating": "204",
+        "gender": 0,
+        "arrayDirects": [0,1,2]
+    }
+
+    let Directs = [
+        "Информационные системы",
+        "Прикладная информатика",
+        "Программная инженерия"
+    ]
 */
