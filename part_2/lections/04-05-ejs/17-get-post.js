@@ -22,7 +22,7 @@ app.post('/postUser', (req, res) => {
     // - 02 -
     res.redirect('/');
     // - 03 - доделать самостоятельно - вывод всех пользователей в таблицу на web-форме
-    // res.render('getUsers', { });
+    // res.render('getUsers.ejs', model);
 });
 
 app.get('/postUser', (req, res) => {
@@ -73,4 +73,12 @@ app.listen(PORT, HOST, () => log(`http://${HOST}:${PORT}/`));
         "Прикладная информатика",
         "Программная инженерия"
     ]
+
+    возможный вариант оформления csv-файла:  
+Федя;Федотов;200;1;0,1,2
+
+
+1) сделать web-форму для getUsers  
+   - добавить кнопку перехода на postUser с методом GET  
+2) доработать web-форму для postUser  
 */

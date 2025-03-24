@@ -2,7 +2,7 @@ const fs = require('fs');
 const csv = require('csvsync'); // npm install csvsync
 const router = require('express').Router();
 
-const getCsvData = () => {
+const getModel = () => {
     const opts = {
         skipHeader: false,
         // headerKeys: ['column1', 'column2'],
@@ -21,7 +21,7 @@ const getCsvData = () => {
 
 // тут путь уже относительный - "/getUsers"
 router.get('/', (req, res) => {
-    let result = getCsvData();
+    let result = getModel();
     if (result) {
         res.status(200).json(result);
     } else {

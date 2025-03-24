@@ -1,5 +1,5 @@
 const express = require('express'); // npm i express
-const csv = require('csvsync'); // npm install csvsync
+const csv = require('csvsync'); // npm i csvsync
 const fs = require('fs');
 
 const { HOST, PORT } = require('./config.json').hosting;
@@ -12,7 +12,7 @@ app.post('/postUser', (req, res) => { // добавить в csv-файл нов
     let { firstName, lastName, rating } = req.body;  // данные берутся из объекта body
     // fs.appendFileSync(filename, `${firstName},${lastName},${rating}\n`, 'utf8');
     fs.appendFileSync(filename, `${[firstName,lastName,rating].join(',')}\n`, 'utf8');
-    res.send(`добавили запись`);
+    res.send(`добавили запись -> ${[firstName,lastName,rating].join(',')}\n`);
 });
 
 app.get(['/getUsers','/'], (req, res) => {

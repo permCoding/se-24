@@ -1,4 +1,4 @@
-const express = require('express'); // npm i express
+const express = require('express');
 const routerPostUser = require('./routers/routerPostUser');
 const routerGetUsers = require('./routers/routerGetUsers');
 const { HOST, PORT } = require('./config.json').hosting;
