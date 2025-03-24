@@ -48,7 +48,7 @@
 
 возможный вариант оформления csv-файла:  
 ```txt
-firstName,lastName,rating,gender,directs
+firstName;lastName;rating;gender;directs
 Ася;Мимова;185;0;1,2
 Федя;Федотов;200;1;0,1,2
 Коля;Сулима;189;1;0
