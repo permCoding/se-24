@@ -25,7 +25,7 @@
 
 ```json
     {
-		"idAbitur": 128,
+        "idAbitur": 128,
         "firstName": "Ирина",
         "lastName": "Кумова",
         "rating": "204",
@@ -38,7 +38,7 @@
 
 ```json
     {
-		"idDirect": 128,
+        "idDirect": 128,
         "nameDirect": "Ирина"
     }
 ```
@@ -55,18 +55,18 @@
 ```json
 [
     {
-	    "idDirect": 0,
-        "nameDirect": "...",
+        "idDirect": 0,
+        "nameDirect": "Информационные системы"
     },
     {
-	    "idDirect": 1,
-        "nameDirect": "...",
+        "idDirect": 1,
+        "nameDirect": "Прикладная информатика"
     },
     {
-	    "idDirect": 2,
-        "nameDirect": "...",
+        "idDirect": 2,
+        "nameDirect": "Программная инженерия"
     }
 ]
 ```
-
+    
 ---  
