@@ -27,10 +27,10 @@ const insertMany = (arrayObj) => {
 const select = () => {
     let query = `SELECT * \
         FROM abiturs \
-        WHERE rating > 200 AND gender = false
-        ORDER BY rating DESC, lastName`
-    db.serialize(function() {
-        db.all(query, function (err, rows) {  
+        WHERE rating > 190 AND gender = true
+        ORDER BY city ASC, rating DESC`
+    db.serialize(() => {
+        db.all(query, (err, rows) => {
             console.table(rows)
             console.log(rows.length)
         })
@@ -46,6 +46,6 @@ let abiturs = require('./data/abiturs.json')
 
 // console.log(abiturs);
 
-// insert(abiturs[1])
+// insert(abiturs.at(-1))
 // insertMany(abiturs)
 select()

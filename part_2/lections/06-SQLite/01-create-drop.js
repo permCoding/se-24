@@ -37,7 +37,7 @@ const event = (err) => {
 
 const createTable = () => {
     let query = ' \
-        CREATE TABLE IF NOT EXISTS "abiturs" ( \
+        CREATE TABLE IF NOT EXISTS abiturs ( \
             "id"    INTEGER, \
             "lastName"    TEXT, \
             "rating"    INTEGER, \
@@ -76,6 +76,16 @@ const dropTable = () => {
     })
 }
 
+const deleteFromTable = () => {
+    let query = "DELETE FROM abiturs WHERE rating = 'error'"
+    db.serialize(() => {
+        db.run(query)
+        db.close(event)
+    })
+}
+
+
+
 // = = = = = = = = = = = = = = = 
 
 const dbPath = './data/db_test.sqlite3'
@@ -83,5 +93,6 @@ const dbPath = './data/db_test.sqlite3'
 const db = new sqlite3.Database(dbPath, eventCreateDB)
 
 // createTable()
-createTableFull()
+// createTableFull()
 // dropTable()
+deleteFromTable()

@@ -150,5 +150,13 @@
         "gender": "1",
         "birthDate": "2002-07-24",
         "city": "Пермь"
+    },
+    {
+        "id": 20,
+        "lastName": "Башкатов",
+        "rating": "error",
+        "gender": "1",
+        "birthDate": "2002-07-24",
+        "city": "Пермь"
     }
 ]
