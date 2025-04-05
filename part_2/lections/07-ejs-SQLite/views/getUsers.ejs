@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/css/favicon.ico" />
+</head>
+
+<body>
+
+    <div>
+        <a href="http://localhost:3000/postUser">
+            <button class="green">Добавить пользователя</button>
+        </a>
+
+        <h3>Сортировать:</h3>
+        <a href="http://localhost:3000/sort/asc">
+            <button class="green">по возрастанию</button>
+        </a>
+        <a href="http://localhost:3000/sort/desc">
+            <button class="green">по убыванию</button>
+        </a>
+        <a href="http://localhost:3000/">
+            <button class="green">как было</button>
+        </a>
+    </div>
+
+    <div>
+        <h3>Пользователи</h3>
+        <!-- idUser;lastName;firstName;gender;idGroup -->
+        <% if (rows) { %>    
+            <% rows.forEach( user => { %>
+                <% let listClass = (+user.gender)? 'list-green': 'list-red'; %>
+                <li class="<%= listClass %>">
+                    <%= user.idUser %> 
+                    <%= user.lastName %> 
+                    <%= user.firstName %> 
+                    <%= (+user.gender)? 'м': 'ж'; %>
+                    <%= user.idGroup %>
+                </li>
+            <% }); %>
+        <% } %>
+    </div>
+
+</body>
+</html>
