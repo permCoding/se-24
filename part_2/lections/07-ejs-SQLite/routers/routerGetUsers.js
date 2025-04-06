@@ -18,7 +18,7 @@ router.get('/sort/:direct', (req, res) => {
     const db = new sqlite3.Database(dbPath);
     db.serialize(() => {
         db.all(query, (err, rows) => { // db.all(query, params, (err, rows)
-            console.table(rows);
+            // console.table(rows);
             res.render('getUsers.ejs', { rows });
         })
         db.close();
