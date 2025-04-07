@@ -4,11 +4,15 @@ Software Engineering Node.js 2024-2025
 
 **БЕЛЯКОВ Андрей Юрьевич** - [telegram](https://t.me/AndreyPerm)  
 
-> [Анкетирование и Тестирование - EXAM](http://exam.1gb.ru/)  
-
-> [Дистант | Программная инженерия - bbb](https://bbb.psaa.ru/rooms/4hq-uur-7nl-kgz/join)  
-> [Дистант | Программная инженерия - bbb3](https://bbb3.psaa.ru/b/7rq-iir-muo-h58)  
 > [Рейтинг группы ПИб-3](https://docs.google.com/spreadsheets/d/1oTw3zL5d-Ngg6Wo80wR53hVOp7tmjnGzaP6s43Yxk-k/edit?usp=sharing)  
+
+> Дистант - трансляция Лекций:  
+
+[1 -- BBB --](https://bbb.psaa.ru/rooms/4hq-uur-7nl-kgz/join)  
+[2 -- BBB3 --](https://bbb3.psaa.ru/b/7rq-iir-muo-h58)  
+[3 -- Yandex --](https://telemost.yandex.ru/j/49275900163503)  
+
+> [Анкетирование и Тестирование - EXAM](http://exam.1gb.ru/)  
 
 | семестр 1 | Лекций | ЛабРаб | Отчётность |
 | :-: | :-: | :-: | :-: |
