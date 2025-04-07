@@ -40,5 +40,5 @@ router.get(['/', '*'], (req, res) => {
 
 module.exports = router;
 
-// db.get() — для одной записи
+// db.get() — для одной записи ' LIMIT 1'
 // db.all() — для нескольких

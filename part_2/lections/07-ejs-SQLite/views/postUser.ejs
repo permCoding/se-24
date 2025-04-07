@@ -10,6 +10,12 @@
 <body>
 
     <div>
+        <% arr.forEach(x => { %>
+            <%= x %> <br>
+        <%}) %>
+    </div>
+
+    <div>
         <h3>Добавить пользователя</h3>
         <!-- 
             в каждом объекте на web-форме должен быть атрибут "name", 
@@ -52,7 +58,7 @@
                 formaction="/postUser" 
                 formmethod="post" 
                 type="submit">
-                Добавить
+                <%= titleButton %>
             </button>
 
         </form>

@@ -1,4 +1,4 @@
-const DB = require('better-sqlite3');
+const DB = require('better-sqlite3'); // npm i better-sqlite3
 const dbPath = './data/users.db';
 
 const insertRecord = (params) => { // Model from MVC

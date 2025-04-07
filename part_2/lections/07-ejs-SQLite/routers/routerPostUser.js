@@ -22,7 +22,8 @@ router.post('/', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-    res.render('postUser.ejs', { });
+    // 
+    res.render('postUser.ejs', { "arr": ['1','2','3'] });
 });
 
 module.exports = router;
