@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "better-sqlite3": "^11.9.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   }
 }
