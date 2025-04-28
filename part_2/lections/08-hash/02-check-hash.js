@@ -16,21 +16,24 @@ const comparePassword = (password, storedHash) => {
 // = = = = = = = = = = = = = = 
 
 const checkPassword = (userName, password) => {
+    // доработать такой функционал:
+    // что делать если нет userName
     let query = `SELECT * FROM users WHERE userName = ?`;
     let stmt = db.prepare(query);
     let record = stmt.get(userName); // object
+    console.log(record);
     return comparePassword(password, record.hashPassword);
 }
 
 // = = = = = = = = = = = = = = = 
 
-const dbPath = './data/db_pass.sqlite3';
+const dbPath = './data/db_pass_new.sqlite3';
 const db = new DB(dbPath);
 
 // let userName = 'Ivan';
 let userName = 'Petr';
-// let pass = 'truePass';
-let pass = 'falsePass';
+let pass = 'truePass';
+// let pass = 'falsePass';
 
 let res = checkPassword(userName, pass);
 console.log(pass, res);

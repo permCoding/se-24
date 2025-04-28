@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose(); // npm install sqlite3
-const crypto = require('crypto'); 
+const crypto = require('crypto');
 
 const getHash = (password) => {
     const salt = crypto.randomBytes(16).toString('hex');
@@ -22,14 +22,14 @@ const event = (err) => {
 const createTable = () => {
     let query = ' \
         CREATE TABLE IF NOT EXISTS users ( \
-                  "idUser" INTEGER, \
-                "userName" TEXT, \
+            "idUser" INTEGER, \
+            "userName" TEXT, \
             "hashPassword" TEXT, \
             PRIMARY KEY("idUser" AUTOINCREMENT) \
         )';
 
     db.serialize(() => {
-        db.run(query, event)
+        db.run(query, event);
         db.close(event);
     })
 }
@@ -74,12 +74,13 @@ const selectAll = () => {
 
 // = = = = = = = = = = = = = = = 
 
-const dbPath = './data/db_pass.sqlite3';
-const db = new sqlite3.Database(dbPath, event);
+const dbPath = './data/db_pass_new.sqlite3';
+const db = new sqlite3.Database(dbPath, event); // если нет файла БД, то создаётся
 
 // createTable();
 // insertUser('Ivan', 'truePass');
 // insertUser('Petr', 'truePass');
+// insertUser('Маша', 'truePass');
 selectAll();
 // dropTable();
 // deleteFromTable('Ivan');

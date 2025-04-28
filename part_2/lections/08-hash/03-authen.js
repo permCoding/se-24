@@ -23,8 +23,8 @@ const personalAccount = `
 
 // = = = = = = = = = 
 
-app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 const checkAuth = (req, res, next) => {
     if (!req.cookies.accessToken) { // Middleware для аутентификации
@@ -35,17 +35,22 @@ const checkAuth = (req, res, next) => {
 
 // из этого сделать роутер для пути /login с методами get и post
 app.get('/login', (req, res) => {
+    // req.body.error
     res.send(htmlLogin); // Страница входа
 });
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
-
+    // SELECT
     if (username === 'admin' && password === 'secret') {
         res.cookie('accessToken', 'secure_token_admin', {
             httpOnly: true,
-            maxAge: 2 * 60 * 60 * 1000 // на один час
+            // maxAge: 2 * 60 * 60 * 1000, // на два часа,
+            maxAge: 15 * 1000, // на два часа,
+            // secure: true,  // только HTTPS
+            // sameSite: 'lax',  // защита от CSRF
         });
+        // если есть роль у userName то ещё и роль проверять
         return res.redirect('/dashboard');
     }
 
@@ -54,6 +59,8 @@ app.post('/login', (req, res) => {
 
 // из этого сделать роутер для пути /dashboard
 app.get('/dashboard', checkAuth, (req, res) => {
+    const accessToken = req.cookies.accessToken; // Получаем куку 'accessToken'
+    console.log('Access Token:', accessToken); // если кука установлена
     res.send(personalAccount); // Защищенная страница
 });
 
