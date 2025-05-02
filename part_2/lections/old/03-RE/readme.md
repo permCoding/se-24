@@ -1,5 +1,7 @@
 # re JS
 
+для тренировки: `https://regex101.com/`  
+
 ```js
 / /
 new RegExp( , )
